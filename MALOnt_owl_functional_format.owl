@@ -1,0 +1,2569 @@
+Prefix(:=<http://idea.rpi.edu/malont#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(malont:=<http://idea.rpi.edu/malont#>)
+Prefix(untitled-ontology-15:=<http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-15#>)
+Prefix(untitled-ontology-16:=<http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#>)
+
+
+Ontology(<http://idea.rpi.edu/malont>
+
+Declaration(Class(malont:AccessAction))
+Declaration(Class(malont:Account))
+Declaration(Class(malont:AccountAuthenticationInformation))
+Declaration(Class(malont:Action))
+Declaration(Class(malont:ActionModifier))
+Declaration(Class(malont:Address))
+Declaration(Class(malont:Attacker))
+Declaration(Class(malont:AttackerGroup))
+Declaration(Class(malont:AuthenticationHash))
+Declaration(Class(malont:BusinessInformation))
+Declaration(Class(malont:Campaign))
+Declaration(Class(malont:CopyAction))
+Declaration(Class(malont:Country))
+Declaration(Class(malont:CourseOfAction))
+Declaration(Class(malont:DataSource))
+Declaration(Class(malont:DigitalAction))
+Declaration(Class(malont:DriversLicenseNumber))
+Declaration(Class(malont:Dropper))
+Declaration(Class(malont:EmailAction))
+Declaration(Class(malont:Event))
+Declaration(Class(malont:Exploit))
+Declaration(Class(malont:ExploitTargetObject))
+Declaration(Class(malont:File))
+Declaration(Class(malont:FinancialInformation))
+Declaration(Class(malont:FinancialTransactionAction))
+Declaration(Class(malont:GeneralVirus))
+Declaration(Class(malont:Hash))
+Declaration(Class(malont:Host))
+Declaration(Class(malont:Information))
+Declaration(Class(malont:InstallAction))
+Declaration(Class(malont:Locality))
+Declaration(Class(malont:Location))
+Declaration(Class(malont:MD5))
+Declaration(Class(malont:Malware))
+Declaration(Class(malont:MalwareCharacteristics))
+Declaration(Class(malont:MalwareFamily))
+Declaration(Class(malont:MedicalInformation))
+Declaration(Class(malont:ModificationAction))
+Declaration(Class(malont:NetworkInformation))
+Declaration(Class(malont:Obfuscation))
+Declaration(Class(malont:Organization))
+Declaration(Class(malont:Password))
+Declaration(Class(malont:Payload))
+Declaration(Class(malont:Person))
+Declaration(Class(malont:PrintAction))
+Declaration(Class(malont:Region))
+Declaration(Class(malont:SHA))
+Declaration(Class(malont:SHA-1))
+Declaration(Class(malont:SHA-256))
+Declaration(Class(malont:SSDeep))
+Declaration(Class(malont:SearchAction))
+Declaration(Class(malont:SocialSecurityNumber))
+Declaration(Class(malont:Software))
+Declaration(Class(malont:SourceCodeInformation))
+Declaration(Class(malont:System))
+Declaration(Class(malont:SystemConfigurationInformation))
+Declaration(Class(malont:SystemInformation))
+Declaration(Class(malont:TechnologyInformation))
+Declaration(Class(malont:Time))
+Declaration(Class(malont:TrojanHorse))
+Declaration(Class(malont:UniquelyIdentifiableInformation))
+Declaration(Class(malont:User))
+Declaration(Class(malont:UserName))
+Declaration(Class(malont:Vector))
+Declaration(Class(malont:Vulnerability))
+Declaration(Class(malont:vHash))
+Declaration(Class(untitled-ontology-16:Email))
+Declaration(Class(untitled-ontology-16:Indicator))
+Declaration(ObjectProperty(malont:accessInformation))
+Declaration(ObjectProperty(malont:authored))
+Declaration(ObjectProperty(malont:belongsTo))
+Declaration(ObjectProperty(malont:connectsTo))
+Declaration(ObjectProperty(malont:exploits))
+Declaration(ObjectProperty(malont:hasAccount))
+Declaration(ObjectProperty(malont:hasAttachment))
+Declaration(ObjectProperty(malont:hasAttackerLocation))
+Declaration(ObjectProperty(malont:hasAttackerTime))
+Declaration(ObjectProperty(malont:hasAuthor))
+Declaration(ObjectProperty(malont:hasCharacteristics))
+Declaration(ObjectProperty(malont:hasFamily))
+Declaration(ObjectProperty(malont:hasInformation))
+Declaration(ObjectProperty(malont:hasMember))
+Declaration(ObjectProperty(malont:hasProduct))
+Declaration(ObjectProperty(malont:hasType))
+Declaration(ObjectProperty(malont:hasVulnerability))
+Declaration(ObjectProperty(malont:indicatedBy))
+Declaration(ObjectProperty(malont:indicates))
+Declaration(ObjectProperty(malont:involvesMalware))
+Declaration(ObjectProperty(malont:isInformationOf))
+Declaration(ObjectProperty(malont:logsInFrom))
+Declaration(ObjectProperty(malont:logsInto))
+Declaration(ObjectProperty(malont:runsSoftware))
+Declaration(ObjectProperty(malont:similarTo))
+Declaration(ObjectProperty(malont:usesAddress))
+Declaration(ObjectProperty(malont:usesDropper))
+Declaration(ObjectProperty(malont:usesHost))
+Declaration(ObjectProperty(malont:usesMalware))
+Declaration(ObjectProperty(untitled-ontology-15:targets))
+Declaration(DataProperty(malont:hasEmailAddress))
+Declaration(DataProperty(malont:hasFileExtension))
+Declaration(DataProperty(malont:hasFileName))
+Declaration(DataProperty(malont:hasFilePath))
+Declaration(DataProperty(malont:hasFileSize))
+Declaration(DataProperty(malont:hasFileType))
+Declaration(DataProperty(malont:hasIP))
+Declaration(DataProperty(malont:hasPort))
+Declaration(DataProperty(malont:hasReleaseYear))
+Declaration(DataProperty(malont:hasURL))
+Declaration(DataProperty(malont:hasVersion))
+Declaration(DataProperty(untitled-ontology-16:hasEmailSubject))
+Declaration(NamedIndividual(malont:Account1))
+Declaration(NamedIndividual(malont:Account2))
+Declaration(NamedIndividual(malont:Account3))
+Declaration(NamedIndividual(malont:Account4))
+Declaration(NamedIndividual(malont:AccountAuthenticationInformation1))
+Declaration(NamedIndividual(malont:AccountAuthenticationInformation2))
+Declaration(NamedIndividual(malont:AccountAuthenticationInformation3))
+Declaration(NamedIndividual(malont:AccountAuthenticationInformation4))
+Declaration(NamedIndividual(malont:Action1))
+Declaration(NamedIndividual(malont:Action2))
+Declaration(NamedIndividual(malont:Action3))
+Declaration(NamedIndividual(malont:Action4))
+Declaration(NamedIndividual(malont:ActionModifier1))
+Declaration(NamedIndividual(malont:ActionModifier2))
+Declaration(NamedIndividual(malont:ActionModifier3))
+Declaration(NamedIndividual(malont:ActionModifier4))
+Declaration(NamedIndividual(malont:Address1))
+Declaration(NamedIndividual(malont:Address2))
+Declaration(NamedIndividual(malont:Address3))
+Declaration(NamedIndividual(malont:Address4))
+Declaration(NamedIndividual(malont:Attacker1))
+Declaration(NamedIndividual(malont:Attacker2))
+Declaration(NamedIndividual(malont:Attacker3))
+Declaration(NamedIndividual(malont:Attacker4))
+Declaration(NamedIndividual(malont:AttackerGroup1))
+Declaration(NamedIndividual(malont:AttackerGroup2))
+Declaration(NamedIndividual(malont:AttackerGroup3))
+Declaration(NamedIndividual(malont:AttackerGroup4))
+Declaration(NamedIndividual(malont:AuthenticationHash1))
+Declaration(NamedIndividual(malont:AuthenticationHash2))
+Declaration(NamedIndividual(malont:AuthenticationHash3))
+Declaration(NamedIndividual(malont:AuthenticationHash4))
+Declaration(NamedIndividual(malont:BusinessInformation1))
+Declaration(NamedIndividual(malont:BusinessInformation2))
+Declaration(NamedIndividual(malont:BusinessInformation3))
+Declaration(NamedIndividual(malont:BusinessInformation4))
+Declaration(NamedIndividual(malont:Campaign1))
+Declaration(NamedIndividual(malont:Campaign2))
+Declaration(NamedIndividual(malont:Campaign3))
+Declaration(NamedIndividual(malont:Campaign4))
+Declaration(NamedIndividual(malont:CopyAction1))
+Declaration(NamedIndividual(malont:CopyAction2))
+Declaration(NamedIndividual(malont:CopyAction3))
+Declaration(NamedIndividual(malont:CopyAction4))
+Declaration(NamedIndividual(malont:Country1))
+Declaration(NamedIndividual(malont:Country2))
+Declaration(NamedIndividual(malont:Country3))
+Declaration(NamedIndividual(malont:Country4))
+Declaration(NamedIndividual(malont:CourseOfAction1))
+Declaration(NamedIndividual(malont:CourseOfAction2))
+Declaration(NamedIndividual(malont:CourseOfAction3))
+Declaration(NamedIndividual(malont:CourseOfAction4))
+Declaration(NamedIndividual(malont:DataSource1))
+Declaration(NamedIndividual(malont:DataSource2))
+Declaration(NamedIndividual(malont:DataSource3))
+Declaration(NamedIndividual(malont:DataSource4))
+Declaration(NamedIndividual(malont:DigitalAction1))
+Declaration(NamedIndividual(malont:DigitalAction2))
+Declaration(NamedIndividual(malont:DigitalAction3))
+Declaration(NamedIndividual(malont:DigitalAction4))
+Declaration(NamedIndividual(malont:DriversLicenseNumber1))
+Declaration(NamedIndividual(malont:DriversLicenseNumber2))
+Declaration(NamedIndividual(malont:DriversLicenseNumber3))
+Declaration(NamedIndividual(malont:DriversLicenseNumber4))
+Declaration(NamedIndividual(malont:Dropper1))
+Declaration(NamedIndividual(malont:Dropper2))
+Declaration(NamedIndividual(malont:Dropper3))
+Declaration(NamedIndividual(malont:Dropper4))
+Declaration(NamedIndividual(malont:Email1))
+Declaration(NamedIndividual(malont:Email2))
+Declaration(NamedIndividual(malont:Email3))
+Declaration(NamedIndividual(malont:Email4))
+Declaration(NamedIndividual(malont:EmailAction1))
+Declaration(NamedIndividual(malont:EmailAction2))
+Declaration(NamedIndividual(malont:EmailAction3))
+Declaration(NamedIndividual(malont:EmailAction4))
+Declaration(NamedIndividual(malont:Event1))
+Declaration(NamedIndividual(malont:Event2))
+Declaration(NamedIndividual(malont:Event3))
+Declaration(NamedIndividual(malont:Event4))
+Declaration(NamedIndividual(malont:Exploit1))
+Declaration(NamedIndividual(malont:Exploit2))
+Declaration(NamedIndividual(malont:Exploit3))
+Declaration(NamedIndividual(malont:Exploit4))
+Declaration(NamedIndividual(malont:ExploitTargetObject1))
+Declaration(NamedIndividual(malont:ExploitTargetObject2))
+Declaration(NamedIndividual(malont:ExploitTargetObject3))
+Declaration(NamedIndividual(malont:ExploitTargetObject4))
+Declaration(NamedIndividual(malont:File1))
+Declaration(NamedIndividual(malont:File2))
+Declaration(NamedIndividual(malont:File3))
+Declaration(NamedIndividual(malont:File4))
+Declaration(NamedIndividual(malont:FinancialInformation1))
+Declaration(NamedIndividual(malont:FinancialInformation2))
+Declaration(NamedIndividual(malont:FinancialInformation3))
+Declaration(NamedIndividual(malont:FinancialInformation4))
+Declaration(NamedIndividual(malont:FinancialTransactionAction1))
+Declaration(NamedIndividual(malont:FinancialTransactionAction2))
+Declaration(NamedIndividual(malont:FinancialTransactionAction3))
+Declaration(NamedIndividual(malont:FinancialTransactionAction4))
+Declaration(NamedIndividual(malont:GeneralVirus1))
+Declaration(NamedIndividual(malont:GeneralVirus2))
+Declaration(NamedIndividual(malont:GeneralVirus3))
+Declaration(NamedIndividual(malont:GeneralVirus4))
+Declaration(NamedIndividual(malont:Hash1))
+Declaration(NamedIndividual(malont:Hash2))
+Declaration(NamedIndividual(malont:Hash3))
+Declaration(NamedIndividual(malont:Hash4))
+Declaration(NamedIndividual(malont:Host1))
+Declaration(NamedIndividual(malont:Host2))
+Declaration(NamedIndividual(malont:Host3))
+Declaration(NamedIndividual(malont:Host4))
+Declaration(NamedIndividual(malont:Indicator1))
+Declaration(NamedIndividual(malont:Indicator2))
+Declaration(NamedIndividual(malont:Indicator3))
+Declaration(NamedIndividual(malont:Indicator4))
+Declaration(NamedIndividual(malont:Information1))
+Declaration(NamedIndividual(malont:Information2))
+Declaration(NamedIndividual(malont:Information3))
+Declaration(NamedIndividual(malont:Information4))
+Declaration(NamedIndividual(malont:InstallAction1))
+Declaration(NamedIndividual(malont:InstallAction2))
+Declaration(NamedIndividual(malont:InstallAction3))
+Declaration(NamedIndividual(malont:InstallAction4))
+Declaration(NamedIndividual(malont:Locality1))
+Declaration(NamedIndividual(malont:Locality2))
+Declaration(NamedIndividual(malont:Locality3))
+Declaration(NamedIndividual(malont:Locality4))
+Declaration(NamedIndividual(malont:Location1))
+Declaration(NamedIndividual(malont:Location2))
+Declaration(NamedIndividual(malont:Location3))
+Declaration(NamedIndividual(malont:Location4))
+Declaration(NamedIndividual(malont:MD5_1))
+Declaration(NamedIndividual(malont:MD5_2))
+Declaration(NamedIndividual(malont:MD5_3))
+Declaration(NamedIndividual(malont:MD5_4))
+Declaration(NamedIndividual(malont:Malware1))
+Declaration(NamedIndividual(malont:Malware2))
+Declaration(NamedIndividual(malont:Malware3))
+Declaration(NamedIndividual(malont:Malware4))
+Declaration(NamedIndividual(malont:MalwareCharacteristics1))
+Declaration(NamedIndividual(malont:MalwareCharacteristics2))
+Declaration(NamedIndividual(malont:MalwareCharacteristics3))
+Declaration(NamedIndividual(malont:MalwareCharacteristics4))
+Declaration(NamedIndividual(malont:MalwareFamily1))
+Declaration(NamedIndividual(malont:MalwareFamily2))
+Declaration(NamedIndividual(malont:MalwareFamily3))
+Declaration(NamedIndividual(malont:MalwareFamily4))
+Declaration(NamedIndividual(malont:MedicalInformation1))
+Declaration(NamedIndividual(malont:MedicalInformation2))
+Declaration(NamedIndividual(malont:MedicalInformation3))
+Declaration(NamedIndividual(malont:MedicalInformation4))
+Declaration(NamedIndividual(malont:ModificationAction1))
+Declaration(NamedIndividual(malont:ModificationAction2))
+Declaration(NamedIndividual(malont:ModificationAction3))
+Declaration(NamedIndividual(malont:ModificationAction4))
+Declaration(NamedIndividual(malont:NetworkInformation1))
+Declaration(NamedIndividual(malont:NetworkInformation2))
+Declaration(NamedIndividual(malont:NetworkInformation3))
+Declaration(NamedIndividual(malont:NetworkInformation4))
+Declaration(NamedIndividual(malont:Obfuscation1))
+Declaration(NamedIndividual(malont:Obfuscation2))
+Declaration(NamedIndividual(malont:Obfuscation3))
+Declaration(NamedIndividual(malont:Obfuscation4))
+Declaration(NamedIndividual(malont:Organization1))
+Declaration(NamedIndividual(malont:Organization2))
+Declaration(NamedIndividual(malont:Organization3))
+Declaration(NamedIndividual(malont:Organization4))
+Declaration(NamedIndividual(malont:Password1))
+Declaration(NamedIndividual(malont:Password2))
+Declaration(NamedIndividual(malont:Password3))
+Declaration(NamedIndividual(malont:Password4))
+Declaration(NamedIndividual(malont:Payload1))
+Declaration(NamedIndividual(malont:Payload2))
+Declaration(NamedIndividual(malont:Payload3))
+Declaration(NamedIndividual(malont:Payload4))
+Declaration(NamedIndividual(malont:Person1))
+Declaration(NamedIndividual(malont:Person2))
+Declaration(NamedIndividual(malont:Person3))
+Declaration(NamedIndividual(malont:Person4))
+Declaration(NamedIndividual(malont:PrintAction1))
+Declaration(NamedIndividual(malont:PrintAction2))
+Declaration(NamedIndividual(malont:PrintAction3))
+Declaration(NamedIndividual(malont:PrintAction4))
+Declaration(NamedIndividual(malont:Region1))
+Declaration(NamedIndividual(malont:Region2))
+Declaration(NamedIndividual(malont:Region3))
+Declaration(NamedIndividual(malont:Region4))
+Declaration(NamedIndividual(malont:SHA-1_1))
+Declaration(NamedIndividual(malont:SHA-1_2))
+Declaration(NamedIndividual(malont:SHA-1_3))
+Declaration(NamedIndividual(malont:SHA-1_4))
+Declaration(NamedIndividual(malont:SHA-256_1))
+Declaration(NamedIndividual(malont:SHA-256_2))
+Declaration(NamedIndividual(malont:SHA-256_3))
+Declaration(NamedIndividual(malont:SHA-256_4))
+Declaration(NamedIndividual(malont:SSDeep1))
+Declaration(NamedIndividual(malont:SSDeep2))
+Declaration(NamedIndividual(malont:SSDeep3))
+Declaration(NamedIndividual(malont:SSDeep4))
+Declaration(NamedIndividual(malont:SearchAction1))
+Declaration(NamedIndividual(malont:SearchAction2))
+Declaration(NamedIndividual(malont:SearchAction3))
+Declaration(NamedIndividual(malont:SearchAction4))
+Declaration(NamedIndividual(malont:SocialSecurityNumber1))
+Declaration(NamedIndividual(malont:SocialSecurityNumber2))
+Declaration(NamedIndividual(malont:SocialSecurityNumber3))
+Declaration(NamedIndividual(malont:SocialSecurityNumber4))
+Declaration(NamedIndividual(malont:Software1))
+Declaration(NamedIndividual(malont:Software2))
+Declaration(NamedIndividual(malont:Software3))
+Declaration(NamedIndividual(malont:Software4))
+Declaration(NamedIndividual(malont:SourceCodeInformation1))
+Declaration(NamedIndividual(malont:SourceCodeInformation2))
+Declaration(NamedIndividual(malont:SourceCodeInformation3))
+Declaration(NamedIndividual(malont:SourceCodeInformation4))
+Declaration(NamedIndividual(malont:System1))
+Declaration(NamedIndividual(malont:System2))
+Declaration(NamedIndividual(malont:System3))
+Declaration(NamedIndividual(malont:System4))
+Declaration(NamedIndividual(malont:SystemConfigurationInformation1))
+Declaration(NamedIndividual(malont:SystemConfigurationInformation2))
+Declaration(NamedIndividual(malont:SystemConfigurationInformation3))
+Declaration(NamedIndividual(malont:SystemConfigurationInformation4))
+Declaration(NamedIndividual(malont:SystemConfigurationInformation5))
+Declaration(NamedIndividual(malont:SystemInformation1))
+Declaration(NamedIndividual(malont:SystemInformation2))
+Declaration(NamedIndividual(malont:SystemInformation3))
+Declaration(NamedIndividual(malont:SystemInformation4))
+Declaration(NamedIndividual(malont:TechnologyInformation1))
+Declaration(NamedIndividual(malont:TechnologyInformation2))
+Declaration(NamedIndividual(malont:TechnologyInformation3))
+Declaration(NamedIndividual(malont:TechnologyInformation4))
+Declaration(NamedIndividual(malont:Time1))
+Declaration(NamedIndividual(malont:Time2))
+Declaration(NamedIndividual(malont:Time3))
+Declaration(NamedIndividual(malont:Time4))
+Declaration(NamedIndividual(malont:TrojanHorse1))
+Declaration(NamedIndividual(malont:TrojanHorse2))
+Declaration(NamedIndividual(malont:TrojanHorse3))
+Declaration(NamedIndividual(malont:TrojanHorse4))
+Declaration(NamedIndividual(malont:UniquelyIdentifiableInformation1))
+Declaration(NamedIndividual(malont:UniquelyIdentifiableInformation2))
+Declaration(NamedIndividual(malont:UniquelyIdentifiableInformation3))
+Declaration(NamedIndividual(malont:UniquelyIdentifiableInformation4))
+Declaration(NamedIndividual(malont:User1))
+Declaration(NamedIndividual(malont:User2))
+Declaration(NamedIndividual(malont:User3))
+Declaration(NamedIndividual(malont:User4))
+Declaration(NamedIndividual(malont:UserName1))
+Declaration(NamedIndividual(malont:UserName2))
+Declaration(NamedIndividual(malont:UserName3))
+Declaration(NamedIndividual(malont:UserName4))
+Declaration(NamedIndividual(malont:Vector1))
+Declaration(NamedIndividual(malont:Vector2))
+Declaration(NamedIndividual(malont:Vector3))
+Declaration(NamedIndividual(malont:Vector4))
+Declaration(NamedIndividual(malont:Vulnerability1))
+Declaration(NamedIndividual(malont:Vulnerability2))
+Declaration(NamedIndividual(malont:Vulnerability3))
+Declaration(NamedIndividual(malont:Vulnerability4))
+Declaration(NamedIndividual(malont:vHash1))
+Declaration(NamedIndividual(malont:vHash2))
+Declaration(NamedIndividual(malont:vHash3))
+Declaration(NamedIndividual(malont:vHash4))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: malont:accessInformation (accessInformation)
+
+AnnotationAssertion(rdfs:label malont:accessInformation "accessInformation")
+SubObjectPropertyOf(malont:accessInformation owl:topObjectProperty)
+ObjectPropertyDomain(malont:accessInformation malont:Attacker)
+ObjectPropertyDomain(malont:accessInformation malont:AttackerGroup)
+ObjectPropertyDomain(malont:accessInformation malont:Campaign)
+ObjectPropertyDomain(malont:accessInformation malont:Malware)
+ObjectPropertyDomain(malont:accessInformation malont:MalwareFamily)
+ObjectPropertyRange(malont:accessInformation malont:Information)
+
+# Object Property: malont:authored (authored)
+
+AnnotationAssertion(rdfs:label malont:authored "authored")
+SubObjectPropertyOf(malont:authored owl:topObjectProperty)
+InverseObjectProperties(malont:authored malont:hasAuthor)
+ObjectPropertyDomain(malont:authored malont:Attacker)
+ObjectPropertyRange(malont:authored malont:Malware)
+
+# Object Property: malont:belongsTo (belongsTo)
+
+AnnotationAssertion(rdfs:label malont:belongsTo "belongsTo")
+SubObjectPropertyOf(malont:belongsTo owl:topObjectProperty)
+ObjectPropertyDomain(malont:belongsTo malont:Attacker)
+ObjectPropertyRange(malont:belongsTo malont:AttackerGroup)
+
+# Object Property: malont:connectsTo (connectsTo)
+
+AnnotationAssertion(rdfs:label malont:connectsTo "connectsTo")
+SubObjectPropertyOf(malont:connectsTo owl:topObjectProperty)
+ObjectPropertyDomain(malont:connectsTo malont:Account)
+ObjectPropertyRange(malont:connectsTo malont:Host)
+
+# Object Property: malont:exploits (exploits)
+
+AnnotationAssertion(rdfs:label malont:exploits "exploits")
+SubObjectPropertyOf(malont:exploits owl:topObjectProperty)
+ObjectPropertyDomain(malont:exploits malont:Malware)
+ObjectPropertyRange(malont:exploits malont:Vulnerability)
+
+# Object Property: malont:hasAccount (hasAccount)
+
+AnnotationAssertion(rdfs:label malont:hasAccount "hasAccount")
+SubObjectPropertyOf(malont:hasAccount owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasAccount malont:User)
+ObjectPropertyRange(malont:hasAccount malont:Account)
+
+# Object Property: malont:hasAttachment (malont:hasAttachment)
+
+SubObjectPropertyOf(malont:hasAttachment owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasAttachment untitled-ontology-16:Email)
+ObjectPropertyRange(malont:hasAttachment malont:File)
+
+# Object Property: malont:hasAttackerLocation (hasAttackerLocation)
+
+AnnotationAssertion(rdfs:label malont:hasAttackerLocation "hasAttackerLocation")
+SubObjectPropertyOf(malont:hasAttackerLocation owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasAttackerLocation malont:Attacker)
+ObjectPropertyRange(malont:hasAttackerLocation malont:Location)
+
+# Object Property: malont:hasAttackerTime (hasAttackerTime)
+
+AnnotationAssertion(rdfs:label malont:hasAttackerTime "hasAttackerTime")
+SubObjectPropertyOf(malont:hasAttackerTime owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasAttackerTime malont:Attacker)
+ObjectPropertyRange(malont:hasAttackerTime malont:Time)
+
+# Object Property: malont:hasAuthor (hasAuthor)
+
+AnnotationAssertion(rdfs:label malont:hasAuthor "hasAuthor")
+SubObjectPropertyOf(malont:hasAuthor owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasAuthor malont:Malware)
+ObjectPropertyRange(malont:hasAuthor malont:Attacker)
+
+# Object Property: malont:hasCharacteristics (hasCharacteristics)
+
+AnnotationAssertion(rdfs:label malont:hasCharacteristics "hasCharacteristics")
+SubObjectPropertyOf(malont:hasCharacteristics owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasCharacteristics malont:Malware)
+ObjectPropertyRange(malont:hasCharacteristics malont:MalwareCharacteristics)
+
+# Object Property: malont:hasFamily (hasFamily)
+
+AnnotationAssertion(rdfs:label malont:hasFamily "hasFamily")
+SubObjectPropertyOf(malont:hasFamily owl:topObjectProperty)
+InverseObjectProperties(malont:hasFamily malont:hasMember)
+ObjectPropertyDomain(malont:hasFamily malont:Malware)
+ObjectPropertyRange(malont:hasFamily malont:MalwareFamily)
+
+# Object Property: malont:hasInformation (malont:hasInformation)
+
+InverseObjectProperties(malont:hasInformation malont:isInformationOf)
+ObjectPropertyDomain(malont:hasInformation malont:ExploitTargetObject)
+ObjectPropertyRange(malont:hasInformation malont:Information)
+
+# Object Property: malont:hasMember (hasMember)
+
+AnnotationAssertion(rdfs:label malont:hasMember "hasMember")
+SubObjectPropertyOf(malont:hasMember owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasMember malont:MalwareFamily)
+ObjectPropertyRange(malont:hasMember malont:Malware)
+
+# Object Property: malont:hasProduct (hasProduct)
+
+AnnotationAssertion(rdfs:label malont:hasProduct "hasProduct")
+SubObjectPropertyOf(malont:hasProduct owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasProduct malont:Software)
+ObjectPropertyRange(malont:hasProduct malont:Software)
+
+# Object Property: malont:hasType (hasType)
+
+AnnotationAssertion(rdfs:label malont:hasType "hasType")
+SubObjectPropertyOf(malont:hasType owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasType malont:Attacker)
+ObjectPropertyDomain(malont:hasType malont:ExploitTargetObject)
+ObjectPropertyRange(malont:hasType malont:Person)
+
+# Object Property: malont:hasVulnerability (hasVulnerability)
+
+AnnotationAssertion(rdfs:label malont:hasVulnerability "hasVulnerability")
+SubObjectPropertyOf(malont:hasVulnerability owl:topObjectProperty)
+ObjectPropertyDomain(malont:hasVulnerability malont:ExploitTargetObject)
+ObjectPropertyDomain(malont:hasVulnerability malont:Software)
+ObjectPropertyRange(malont:hasVulnerability malont:Vulnerability)
+
+# Object Property: malont:indicatedBy (indicatedBy)
+
+AnnotationAssertion(rdfs:label malont:indicatedBy "indicatedBy")
+SubObjectPropertyOf(malont:indicatedBy owl:topObjectProperty)
+InverseObjectProperties(malont:indicatedBy malont:indicates)
+ObjectPropertyDomain(malont:indicatedBy malont:Malware)
+ObjectPropertyRange(malont:indicatedBy untitled-ontology-16:Indicator)
+
+# Object Property: malont:indicates (indicates)
+
+AnnotationAssertion(rdfs:label malont:indicates "indicates")
+SubObjectPropertyOf(malont:indicates owl:topObjectProperty)
+ObjectPropertyDomain(malont:indicates untitled-ontology-16:Indicator)
+ObjectPropertyRange(malont:indicates malont:Malware)
+
+# Object Property: malont:involvesMalware (involvesMalware)
+
+AnnotationAssertion(rdfs:label malont:involvesMalware "involvesMalware")
+SubObjectPropertyOf(malont:involvesMalware owl:topObjectProperty)
+ObjectPropertyRange(malont:involvesMalware malont:Malware)
+
+# Object Property: malont:isInformationOf (malont:isInformationOf)
+
+SubObjectPropertyOf(malont:isInformationOf owl:topObjectProperty)
+
+# Object Property: malont:logsInFrom (logsInFrom)
+
+AnnotationAssertion(rdfs:label malont:logsInFrom "logsInFrom")
+SubObjectPropertyOf(malont:logsInFrom malont:connectsTo)
+
+# Object Property: malont:logsInto (logsInto)
+
+AnnotationAssertion(rdfs:label malont:logsInto "logsInto")
+SubObjectPropertyOf(malont:logsInto malont:connectsTo)
+
+# Object Property: malont:runsSoftware (runsSoftware)
+
+AnnotationAssertion(rdfs:label malont:runsSoftware "runsSoftware")
+SubObjectPropertyOf(malont:runsSoftware owl:topObjectProperty)
+ObjectPropertyDomain(malont:runsSoftware malont:Host)
+ObjectPropertyRange(malont:runsSoftware malont:Software)
+
+# Object Property: malont:similarTo (similarTo)
+
+AnnotationAssertion(rdfs:label malont:similarTo "similarTo")
+SubObjectPropertyOf(malont:similarTo owl:topObjectProperty)
+
+# Object Property: malont:usesAddress (usesAddress)
+
+AnnotationAssertion(rdfs:label malont:usesAddress "usesAddress")
+SubObjectPropertyOf(malont:usesAddress owl:topObjectProperty)
+ObjectPropertyDomain(malont:usesAddress malont:Attacker)
+ObjectPropertyDomain(malont:usesAddress malont:Host)
+ObjectPropertyDomain(malont:usesAddress malont:Malware)
+ObjectPropertyRange(malont:usesAddress malont:Address)
+
+# Object Property: malont:usesDropper (usesDropper)
+
+AnnotationAssertion(rdfs:label malont:usesDropper "usesDropper")
+SubObjectPropertyOf(malont:usesDropper owl:topObjectProperty)
+ObjectPropertyDomain(malont:usesDropper malont:Attacker)
+ObjectPropertyDomain(malont:usesDropper malont:Malware)
+ObjectPropertyRange(malont:usesDropper malont:Dropper)
+
+# Object Property: malont:usesHost (usesHost)
+
+AnnotationAssertion(rdfs:label malont:usesHost "usesHost")
+SubObjectPropertyOf(malont:usesHost owl:topObjectProperty)
+ObjectPropertyDomain(malont:usesHost malont:Attacker)
+ObjectPropertyDomain(malont:usesHost malont:Malware)
+ObjectPropertyRange(malont:usesHost malont:Host)
+
+# Object Property: malont:usesMalware (usesMalware)
+
+AnnotationAssertion(rdfs:label malont:usesMalware "usesMalware")
+SubObjectPropertyOf(malont:usesMalware malont:involvesMalware)
+ObjectPropertyDomain(malont:usesMalware malont:Attacker)
+
+# Object Property: untitled-ontology-15:targets (targets)
+
+AnnotationAssertion(rdfs:label untitled-ontology-15:targets "targets")
+SubObjectPropertyOf(untitled-ontology-15:targets owl:topObjectProperty)
+ObjectPropertyDomain(untitled-ontology-15:targets malont:Attacker)
+ObjectPropertyDomain(untitled-ontology-15:targets malont:Malware)
+ObjectPropertyRange(untitled-ontology-15:targets malont:ExploitTargetObject)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: malont:hasEmailAddress (hasEmailAddress)
+
+AnnotationAssertion(rdfs:label malont:hasEmailAddress "hasEmailAddress")
+SubDataPropertyOf(malont:hasEmailAddress owl:topDataProperty)
+DataPropertyDomain(malont:hasEmailAddress untitled-ontology-16:Email)
+DataPropertyRange(malont:hasEmailAddress xsd:string)
+
+# Data Property: malont:hasFileExtension (hasFileExtension)
+
+AnnotationAssertion(rdfs:label malont:hasFileExtension "hasFileExtension")
+SubDataPropertyOf(malont:hasFileExtension owl:topDataProperty)
+DataPropertyDomain(malont:hasFileExtension malont:File)
+DataPropertyRange(malont:hasFileExtension xsd:string)
+
+# Data Property: malont:hasFileName (hasFileName)
+
+AnnotationAssertion(rdfs:label malont:hasFileName "hasFileName")
+SubDataPropertyOf(malont:hasFileName owl:topDataProperty)
+DataPropertyDomain(malont:hasFileName malont:File)
+DataPropertyRange(malont:hasFileName xsd:string)
+
+# Data Property: malont:hasFilePath (hasFilePath)
+
+AnnotationAssertion(rdfs:label malont:hasFilePath "hasFilePath")
+SubDataPropertyOf(malont:hasFilePath owl:topDataProperty)
+DataPropertyDomain(malont:hasFilePath malont:File)
+DataPropertyRange(malont:hasFilePath xsd:string)
+
+# Data Property: malont:hasFileSize (hasFileSize)
+
+AnnotationAssertion(rdfs:label malont:hasFileSize "hasFileSize")
+SubDataPropertyOf(malont:hasFileSize owl:topDataProperty)
+DataPropertyDomain(malont:hasFileSize malont:File)
+DataPropertyRange(malont:hasFileSize xsd:string)
+
+# Data Property: malont:hasFileType (hasFileType)
+
+AnnotationAssertion(rdfs:label malont:hasFileType "hasFileType")
+SubDataPropertyOf(malont:hasFileType owl:topDataProperty)
+DataPropertyDomain(malont:hasFileType malont:File)
+DataPropertyRange(malont:hasFileType xsd:string)
+
+# Data Property: malont:hasIP (hasIP)
+
+AnnotationAssertion(rdfs:label malont:hasIP "hasIP")
+SubDataPropertyOf(malont:hasIP owl:topDataProperty)
+DataPropertyDomain(malont:hasIP malont:Address)
+DataPropertyRange(malont:hasIP xsd:string)
+
+# Data Property: malont:hasPort (hasPort)
+
+AnnotationAssertion(rdfs:label malont:hasPort "hasPort")
+SubDataPropertyOf(malont:hasPort owl:topDataProperty)
+DataPropertyDomain(malont:hasPort malont:Address)
+DataPropertyRange(malont:hasPort xsd:string)
+
+# Data Property: malont:hasReleaseYear (hasReleaseYear)
+
+AnnotationAssertion(rdfs:label malont:hasReleaseYear "hasReleaseYear")
+SubDataPropertyOf(malont:hasReleaseYear owl:topDataProperty)
+DataPropertyDomain(malont:hasReleaseYear malont:Software)
+DataPropertyRange(malont:hasReleaseYear xsd:string)
+
+# Data Property: malont:hasURL (hasURL)
+
+AnnotationAssertion(rdfs:label malont:hasURL "hasURL")
+SubDataPropertyOf(malont:hasURL owl:topDataProperty)
+DataPropertyDomain(malont:hasURL malont:Address)
+DataPropertyRange(malont:hasURL xsd:string)
+
+# Data Property: malont:hasVersion (hasVersion)
+
+AnnotationAssertion(rdfs:label malont:hasVersion "hasVersion")
+SubDataPropertyOf(malont:hasVersion owl:topDataProperty)
+DataPropertyDomain(malont:hasVersion malont:Software)
+DataPropertyRange(malont:hasVersion xsd:string)
+
+# Data Property: untitled-ontology-16:hasEmailSubject (hasEmailSubject)
+
+AnnotationAssertion(rdfs:label untitled-ontology-16:hasEmailSubject "hasEmailSubject")
+SubDataPropertyOf(untitled-ontology-16:hasEmailSubject owl:topDataProperty)
+DataPropertyDomain(untitled-ontology-16:hasEmailSubject untitled-ontology-16:Email)
+DataPropertyRange(untitled-ontology-16:hasEmailSubject xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: malont:AccessAction (AccessAction)
+
+AnnotationAssertion(rdfs:label malont:AccessAction "AccessAction")
+SubClassOf(malont:AccessAction malont:DigitalAction)
+
+# Class: malont:Account (Account)
+
+AnnotationAssertion(rdfs:label malont:Account "Account")
+
+# Class: malont:AccountAuthenticationInformation (AccountAuthenticationInformation)
+
+AnnotationAssertion(rdfs:label malont:AccountAuthenticationInformation "AccountAuthenticationInformation")
+SubClassOf(malont:AccountAuthenticationInformation malont:SystemInformation)
+
+# Class: malont:Action (Action)
+
+AnnotationAssertion(rdfs:label malont:Action "Action")
+
+# Class: malont:ActionModifier (ActionModifier)
+
+AnnotationAssertion(rdfs:label malont:ActionModifier "ActionModifier")
+SubClassOf(malont:ActionModifier malont:Action)
+
+# Class: malont:Address (Address)
+
+AnnotationAssertion(rdfs:label malont:Address "Address")
+SubClassOf(malont:Address untitled-ontology-16:Indicator)
+
+# Class: malont:Attacker (Attacker)
+
+AnnotationAssertion(rdfs:label malont:Attacker "Attacker")
+
+# Class: malont:AttackerGroup (AttackerGroup)
+
+AnnotationAssertion(rdfs:label malont:AttackerGroup "AttackerGroup")
+
+# Class: malont:AuthenticationHash (AuthenticationHash)
+
+AnnotationAssertion(rdfs:label malont:AuthenticationHash "AuthenticationHash")
+SubClassOf(malont:AuthenticationHash malont:Hash)
+
+# Class: malont:BusinessInformation (BusinessInformation)
+
+AnnotationAssertion(rdfs:label malont:BusinessInformation "BusinessInformation")
+SubClassOf(malont:BusinessInformation malont:Information)
+
+# Class: malont:Campaign (Campaign)
+
+AnnotationAssertion(rdfs:label malont:Campaign "Campaign")
+
+# Class: malont:CopyAction (CopyAction)
+
+AnnotationAssertion(rdfs:label malont:CopyAction "CopyAction")
+SubClassOf(malont:CopyAction malont:DigitalAction)
+
+# Class: malont:Country (Country)
+
+AnnotationAssertion(rdfs:label malont:Country "Country")
+SubClassOf(malont:Country malont:Region)
+
+# Class: malont:CourseOfAction (CourseOfAction)
+
+AnnotationAssertion(rdfs:label malont:CourseOfAction "CourseOfAction")
+SubClassOf(malont:CourseOfAction malont:Action)
+
+# Class: malont:DataSource (DataSource)
+
+AnnotationAssertion(rdfs:label malont:DataSource "DataSource")
+
+# Class: malont:DigitalAction (DigitalAction)
+
+AnnotationAssertion(rdfs:label malont:DigitalAction "DigitalAction")
+SubClassOf(malont:DigitalAction malont:Action)
+
+# Class: malont:DriversLicenseNumber (DriversLicenseNumber)
+
+AnnotationAssertion(rdfs:label malont:DriversLicenseNumber "DriversLicenseNumber")
+SubClassOf(malont:DriversLicenseNumber malont:UniquelyIdentifiableInformation)
+
+# Class: malont:Dropper (Dropper)
+
+AnnotationAssertion(rdfs:label malont:Dropper "Dropper")
+SubClassOf(malont:Dropper malont:Malware)
+
+# Class: malont:EmailAction (EmailAction)
+
+AnnotationAssertion(rdfs:label malont:EmailAction "EmailAction")
+SubClassOf(malont:EmailAction malont:DigitalAction)
+
+# Class: malont:Event (Event)
+
+AnnotationAssertion(rdfs:label malont:Event "Event")
+
+# Class: malont:Exploit (Exploit)
+
+AnnotationAssertion(rdfs:label malont:Exploit "Exploit")
+SubClassOf(malont:Exploit malont:Malware)
+
+# Class: malont:ExploitTargetObject (ExploitTargetObject)
+
+AnnotationAssertion(rdfs:comment malont:ExploitTargetObject _:genid2)
+AnnotationAssertion(rdfs:label malont:ExploitTargetObject "ExploitTargetObject")
+
+# Class: malont:File (File)
+
+AnnotationAssertion(rdfs:label malont:File "File")
+SubClassOf(malont:File untitled-ontology-16:Indicator)
+
+# Class: malont:FinancialInformation (FinancialInformation)
+
+AnnotationAssertion(rdfs:label malont:FinancialInformation "FinancialInformation")
+SubClassOf(malont:FinancialInformation malont:Information)
+
+# Class: malont:FinancialTransactionAction (FinancialTransactionAction)
+
+AnnotationAssertion(rdfs:label malont:FinancialTransactionAction "FinancialTransactionAction")
+SubClassOf(malont:FinancialTransactionAction malont:Action)
+
+# Class: malont:GeneralVirus (GeneralVirus)
+
+AnnotationAssertion(rdfs:label malont:GeneralVirus "GeneralVirus")
+SubClassOf(malont:GeneralVirus malont:Malware)
+
+# Class: malont:Hash (Hash)
+
+AnnotationAssertion(rdfs:label malont:Hash "Hash")
+SubClassOf(malont:Hash untitled-ontology-16:Indicator)
+
+# Class: malont:Host (Host)
+
+AnnotationAssertion(rdfs:label malont:Host "Host")
+
+# Class: malont:Information (Information)
+
+AnnotationAssertion(rdfs:label malont:Information "Information")
+
+# Class: malont:InstallAction (InstallAction)
+
+AnnotationAssertion(rdfs:label malont:InstallAction "InstallAction")
+SubClassOf(malont:InstallAction malont:DigitalAction)
+
+# Class: malont:Locality (Locality)
+
+AnnotationAssertion(rdfs:label malont:Locality "Locality")
+SubClassOf(malont:Locality malont:Country)
+
+# Class: malont:Location (Location)
+
+AnnotationAssertion(rdfs:label malont:Location "Location")
+
+# Class: malont:MD5 (MD5)
+
+AnnotationAssertion(rdfs:label malont:MD5 "MD5")
+SubClassOf(malont:MD5 malont:Hash)
+
+# Class: malont:Malware (Malware)
+
+AnnotationAssertion(rdfs:label malont:Malware "Malware")
+
+# Class: malont:MalwareCharacteristics (MalwareCharacteristics)
+
+AnnotationAssertion(rdfs:label malont:MalwareCharacteristics "MalwareCharacteristics")
+
+# Class: malont:MalwareFamily (MalwareFamily)
+
+AnnotationAssertion(rdfs:label malont:MalwareFamily "MalwareFamily")
+
+# Class: malont:MedicalInformation (MedicalInformation)
+
+AnnotationAssertion(rdfs:label malont:MedicalInformation "MedicalInformation")
+SubClassOf(malont:MedicalInformation malont:Information)
+
+# Class: malont:ModificationAction (ModificationAction)
+
+AnnotationAssertion(rdfs:label malont:ModificationAction "ModificationAction")
+SubClassOf(malont:ModificationAction malont:DigitalAction)
+
+# Class: malont:NetworkInformation (NetworkInformation)
+
+AnnotationAssertion(rdfs:label malont:NetworkInformation "NetworkInformation")
+SubClassOf(malont:NetworkInformation malont:TechnologyInformation)
+
+# Class: malont:Obfuscation (Obfuscation)
+
+AnnotationAssertion(rdfs:label malont:Obfuscation "Obfuscation")
+SubClassOf(malont:Obfuscation malont:MalwareCharacteristics)
+
+# Class: malont:Organization (Organization)
+
+AnnotationAssertion(rdfs:label malont:Organization "Organization")
+
+# Class: malont:Password (Password)
+
+AnnotationAssertion(rdfs:label malont:Password "Password")
+SubClassOf(malont:Password malont:AccountAuthenticationInformation)
+
+# Class: malont:Payload (Payload)
+
+AnnotationAssertion(rdfs:label malont:Payload "Payload")
+SubClassOf(malont:Payload malont:MalwareCharacteristics)
+
+# Class: malont:Person (Person)
+
+AnnotationAssertion(rdfs:label malont:Person "Person")
+
+# Class: malont:PrintAction (PrintAction)
+
+AnnotationAssertion(rdfs:label malont:PrintAction "PrintAction")
+SubClassOf(malont:PrintAction malont:DigitalAction)
+
+# Class: malont:Region (Region)
+
+AnnotationAssertion(rdfs:label malont:Region "Region")
+SubClassOf(malont:Region malont:Location)
+
+# Class: malont:SHA (malont:SHA)
+
+SubClassOf(malont:SHA malont:Hash)
+
+# Class: malont:SHA-1 (SHA-1)
+
+AnnotationAssertion(rdfs:label malont:SHA-1 "SHA-1")
+SubClassOf(malont:SHA-1 malont:SHA)
+
+# Class: malont:SHA-256 (SHA-256)
+
+AnnotationAssertion(rdfs:label malont:SHA-256 "SHA-256")
+SubClassOf(malont:SHA-256 malont:SHA)
+
+# Class: malont:SSDeep (SSDeep)
+
+AnnotationAssertion(rdfs:label malont:SSDeep "SSDeep")
+SubClassOf(malont:SSDeep malont:Hash)
+
+# Class: malont:SearchAction (SearchAction)
+
+AnnotationAssertion(rdfs:label malont:SearchAction "SearchAction")
+SubClassOf(malont:SearchAction malont:DigitalAction)
+
+# Class: malont:SocialSecurityNumber (SocialSecurityNumber)
+
+AnnotationAssertion(rdfs:label malont:SocialSecurityNumber "SocialSecurityNumber")
+SubClassOf(malont:SocialSecurityNumber malont:UniquelyIdentifiableInformation)
+
+# Class: malont:Software (Software)
+
+AnnotationAssertion(rdfs:label malont:Software "Software")
+
+# Class: malont:SourceCodeInformation (SourceCodeInformation)
+
+AnnotationAssertion(rdfs:label malont:SourceCodeInformation "SourceCodeInformation")
+SubClassOf(malont:SourceCodeInformation malont:TechnologyInformation)
+
+# Class: malont:System (System)
+
+AnnotationAssertion(rdfs:label malont:System "System")
+
+# Class: malont:SystemConfigurationInformation (SystemConfigurationInformation)
+
+AnnotationAssertion(rdfs:label malont:SystemConfigurationInformation "SystemConfigurationInformation")
+SubClassOf(malont:SystemConfigurationInformation malont:SystemInformation)
+
+# Class: malont:SystemInformation (SystemInformation)
+
+AnnotationAssertion(rdfs:label malont:SystemInformation "SystemInformation")
+SubClassOf(malont:SystemInformation malont:TechnologyInformation)
+
+# Class: malont:TechnologyInformation (TechnologyInformation)
+
+AnnotationAssertion(rdfs:label malont:TechnologyInformation "TechnologyInformation")
+SubClassOf(malont:TechnologyInformation malont:Information)
+
+# Class: malont:Time (Time)
+
+AnnotationAssertion(rdfs:label malont:Time "Time")
+
+# Class: malont:TrojanHorse (TrojanHorse)
+
+AnnotationAssertion(rdfs:label malont:TrojanHorse "TrojanHorse")
+SubClassOf(malont:TrojanHorse malont:Malware)
+
+# Class: malont:UniquelyIdentifiableInformation (UniquelyIdentifiableInformation)
+
+AnnotationAssertion(rdfs:label malont:UniquelyIdentifiableInformation "UniquelyIdentifiableInformation")
+SubClassOf(malont:UniquelyIdentifiableInformation malont:Information)
+
+# Class: malont:User (User)
+
+AnnotationAssertion(rdfs:label malont:User "User")
+
+# Class: malont:UserName (UserName)
+
+AnnotationAssertion(rdfs:label malont:UserName "UserName")
+SubClassOf(malont:UserName malont:AccountAuthenticationInformation)
+
+# Class: malont:Vector (Vector)
+
+AnnotationAssertion(rdfs:label malont:Vector "Vector")
+SubClassOf(malont:Vector malont:MalwareCharacteristics)
+
+# Class: malont:Vulnerability (Vulnerability)
+
+AnnotationAssertion(rdfs:label malont:Vulnerability "Vulnerability")
+
+# Class: malont:vHash (vHash)
+
+AnnotationAssertion(rdfs:label malont:vHash "vHash")
+SubClassOf(malont:vHash malont:Hash)
+
+# Class: untitled-ontology-16:Email (Email)
+
+AnnotationAssertion(rdfs:label untitled-ontology-16:Email "Email")
+SubClassOf(untitled-ontology-16:Email untitled-ontology-16:Indicator)
+
+# Class: untitled-ontology-16:Indicator (Indicator)
+
+AnnotationAssertion(rdfs:label untitled-ontology-16:Indicator "Indicator")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: malont:Account1 (Account1)
+
+AnnotationAssertion(rdfs:label malont:Account1 "Account1"^^xsd:string)
+ClassAssertion(malont:Account malont:Account1)
+ObjectPropertyAssertion(malont:connectsTo malont:Account1 malont:Host1)
+
+# Individual: malont:Account2 (Account2)
+
+AnnotationAssertion(rdfs:label malont:Account2 "Account2"^^xsd:string)
+ClassAssertion(malont:Account malont:Account2)
+ObjectPropertyAssertion(malont:connectsTo malont:Account2 malont:Host2)
+
+# Individual: malont:Account3 (Account3)
+
+AnnotationAssertion(rdfs:label malont:Account3 "Account3"^^xsd:string)
+ClassAssertion(malont:Account malont:Account3)
+ObjectPropertyAssertion(malont:connectsTo malont:Account3 malont:Host3)
+
+# Individual: malont:Account4 (Account4)
+
+AnnotationAssertion(rdfs:label malont:Account4 "Account4"^^xsd:string)
+ClassAssertion(malont:Account malont:Account4)
+ObjectPropertyAssertion(malont:connectsTo malont:Account4 malont:Host4)
+
+# Individual: malont:AccountAuthenticationInformation1 (AccountAuthenticationInformation1)
+
+AnnotationAssertion(rdfs:label malont:AccountAuthenticationInformation1 "AccountAuthenticationInformation1"^^xsd:string)
+ClassAssertion(malont:AccountAuthenticationInformation malont:AccountAuthenticationInformation1)
+
+# Individual: malont:AccountAuthenticationInformation2 (AccountAuthenticationInformation2)
+
+AnnotationAssertion(rdfs:label malont:AccountAuthenticationInformation2 "AccountAuthenticationInformation2"^^xsd:string)
+ClassAssertion(malont:AccountAuthenticationInformation malont:AccountAuthenticationInformation2)
+
+# Individual: malont:AccountAuthenticationInformation3 (AccountAuthenticationInformation3)
+
+AnnotationAssertion(rdfs:label malont:AccountAuthenticationInformation3 "AccountAuthenticationInformation3"^^xsd:string)
+ClassAssertion(malont:AccountAuthenticationInformation malont:AccountAuthenticationInformation3)
+
+# Individual: malont:AccountAuthenticationInformation4 (AccountAuthenticationInformation4)
+
+AnnotationAssertion(rdfs:label malont:AccountAuthenticationInformation4 "AccountAuthenticationInformation4"^^xsd:string)
+ClassAssertion(malont:AccountAuthenticationInformation malont:AccountAuthenticationInformation4)
+
+# Individual: malont:Action1 (Action1)
+
+AnnotationAssertion(rdfs:label malont:Action1 "Action1"^^xsd:string)
+ClassAssertion(malont:Action malont:Action1)
+
+# Individual: malont:Action2 (Action2)
+
+AnnotationAssertion(rdfs:label malont:Action2 "Action2"^^xsd:string)
+ClassAssertion(malont:Action malont:Action2)
+
+# Individual: malont:Action3 (Action3)
+
+AnnotationAssertion(rdfs:label malont:Action3 "Action3"^^xsd:string)
+ClassAssertion(malont:Action malont:Action3)
+
+# Individual: malont:Action4 (Action4)
+
+AnnotationAssertion(rdfs:label malont:Action4 "Action4"^^xsd:string)
+ClassAssertion(malont:Action malont:Action4)
+
+# Individual: malont:ActionModifier1 (ActionModifier1)
+
+AnnotationAssertion(rdfs:label malont:ActionModifier1 "ActionModifier1"^^xsd:string)
+ClassAssertion(malont:ActionModifier malont:ActionModifier1)
+
+# Individual: malont:ActionModifier2 (ActionModifier2)
+
+AnnotationAssertion(rdfs:label malont:ActionModifier2 "ActionModifier2"^^xsd:string)
+ClassAssertion(malont:ActionModifier malont:ActionModifier2)
+
+# Individual: malont:ActionModifier3 (ActionModifier3)
+
+AnnotationAssertion(rdfs:label malont:ActionModifier3 "ActionModifier3"^^xsd:string)
+ClassAssertion(malont:ActionModifier malont:ActionModifier3)
+
+# Individual: malont:ActionModifier4 (ActionModifier4)
+
+AnnotationAssertion(rdfs:label malont:ActionModifier4 "ActionModifier4"^^xsd:string)
+ClassAssertion(malont:ActionModifier malont:ActionModifier4)
+
+# Individual: malont:Address1 (Address1)
+
+AnnotationAssertion(rdfs:label malont:Address1 "Address1"^^xsd:string)
+ClassAssertion(malont:Address malont:Address1)
+DataPropertyAssertion(malont:hasIP malont:Address1 "IP1"^^xsd:string)
+DataPropertyAssertion(malont:hasPort malont:Address1 "port1"^^xsd:string)
+DataPropertyAssertion(malont:hasURL malont:Address1 "URL1"^^xsd:string)
+
+# Individual: malont:Address2 (Address2)
+
+AnnotationAssertion(rdfs:label malont:Address2 "Address2"^^xsd:string)
+ClassAssertion(malont:Address malont:Address2)
+DataPropertyAssertion(malont:hasIP malont:Address2 "IP2"^^xsd:string)
+DataPropertyAssertion(malont:hasPort malont:Address2 "port2"^^xsd:string)
+DataPropertyAssertion(malont:hasURL malont:Address2 "URL2"^^xsd:string)
+
+# Individual: malont:Address3 (Address3)
+
+AnnotationAssertion(rdfs:label malont:Address3 "Address3"^^xsd:string)
+ClassAssertion(malont:Address malont:Address3)
+DataPropertyAssertion(malont:hasIP malont:Address3 "IP3"^^xsd:string)
+DataPropertyAssertion(malont:hasPort malont:Address3 "port3"^^xsd:string)
+DataPropertyAssertion(malont:hasURL malont:Address3 "URL3"^^xsd:string)
+
+# Individual: malont:Address4 (Address4)
+
+AnnotationAssertion(rdfs:label malont:Address4 "Address4"^^xsd:string)
+ClassAssertion(malont:Address malont:Address4)
+DataPropertyAssertion(malont:hasIP malont:Address4 "IP4"^^xsd:string)
+DataPropertyAssertion(malont:hasPort malont:Address4 "port4"^^xsd:string)
+DataPropertyAssertion(malont:hasURL malont:Address4 "URL4"^^xsd:string)
+
+# Individual: malont:Attacker1 (Attacker1)
+
+AnnotationAssertion(rdfs:label malont:Attacker1 "Attacker1"^^xsd:string)
+ClassAssertion(malont:Attacker malont:Attacker1)
+ObjectPropertyAssertion(malont:authored malont:Attacker1 malont:Malware1)
+ObjectPropertyAssertion(malont:belongsTo malont:Attacker1 malont:AttackerGroup1)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Attacker1 malont:Location1)
+ObjectPropertyAssertion(malont:hasAttackerTime malont:Attacker1 malont:Time1)
+ObjectPropertyAssertion(malont:hasType malont:Attacker1 malont:Organization1)
+ObjectPropertyAssertion(malont:involvesMalware malont:Attacker1 malont:Malware1)
+ObjectPropertyAssertion(malont:usesAddress malont:Attacker1 malont:Address1)
+ObjectPropertyAssertion(malont:usesDropper malont:Attacker1 malont:Dropper1)
+ObjectPropertyAssertion(malont:usesHost malont:Attacker1 malont:Host1)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Attacker1 malont:ExploitTargetObject1)
+
+# Individual: malont:Attacker2 (Attacker2)
+
+AnnotationAssertion(rdfs:label malont:Attacker2 "Attacker2"^^xsd:string)
+ClassAssertion(malont:Attacker malont:Attacker2)
+ObjectPropertyAssertion(malont:authored malont:Attacker2 malont:Malware2)
+ObjectPropertyAssertion(malont:belongsTo malont:Attacker2 malont:AttackerGroup2)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Attacker2 malont:Location2)
+ObjectPropertyAssertion(malont:hasAttackerTime malont:Attacker2 malont:Time2)
+ObjectPropertyAssertion(malont:hasType malont:Attacker2 malont:Organization2)
+ObjectPropertyAssertion(malont:involvesMalware malont:Attacker2 malont:Malware2)
+ObjectPropertyAssertion(malont:usesAddress malont:Attacker2 malont:Address2)
+ObjectPropertyAssertion(malont:usesDropper malont:Attacker2 malont:Dropper2)
+ObjectPropertyAssertion(malont:usesHost malont:Attacker2 malont:Host2)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Attacker2 malont:ExploitTargetObject2)
+
+# Individual: malont:Attacker3 (Attacker3)
+
+AnnotationAssertion(rdfs:label malont:Attacker3 "Attacker3"^^xsd:string)
+ClassAssertion(malont:Attacker malont:Attacker3)
+ObjectPropertyAssertion(malont:authored malont:Attacker3 malont:Malware3)
+ObjectPropertyAssertion(malont:belongsTo malont:Attacker3 malont:AttackerGroup3)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Attacker3 malont:Location3)
+ObjectPropertyAssertion(malont:hasAttackerTime malont:Attacker3 malont:Time3)
+ObjectPropertyAssertion(malont:hasType malont:Attacker3 malont:Organization3)
+ObjectPropertyAssertion(malont:involvesMalware malont:Attacker3 malont:Malware3)
+ObjectPropertyAssertion(malont:usesAddress malont:Attacker3 malont:Address3)
+ObjectPropertyAssertion(malont:usesDropper malont:Attacker3 malont:Dropper3)
+ObjectPropertyAssertion(malont:usesHost malont:Attacker3 malont:Host3)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Attacker3 malont:ExploitTargetObject3)
+
+# Individual: malont:Attacker4 (Attacker4)
+
+AnnotationAssertion(rdfs:label malont:Attacker4 "Attacker4"^^xsd:string)
+ClassAssertion(malont:Attacker malont:Attacker4)
+ObjectPropertyAssertion(malont:authored malont:Attacker4 malont:Malware4)
+ObjectPropertyAssertion(malont:belongsTo malont:Attacker4 malont:AttackerGroup4)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Attacker4 malont:Location4)
+ObjectPropertyAssertion(malont:hasAttackerTime malont:Attacker4 malont:Time4)
+ObjectPropertyAssertion(malont:hasType malont:Attacker4 malont:Organization4)
+ObjectPropertyAssertion(malont:involvesMalware malont:Attacker4 malont:Malware4)
+ObjectPropertyAssertion(malont:usesAddress malont:Attacker4 malont:Address4)
+ObjectPropertyAssertion(malont:usesDropper malont:Attacker4 malont:Dropper4)
+ObjectPropertyAssertion(malont:usesHost malont:Attacker4 malont:Host4)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Attacker4 malont:ExploitTargetObject4)
+
+# Individual: malont:AttackerGroup1 (AttackerGroup1)
+
+AnnotationAssertion(rdfs:label malont:AttackerGroup1 "AttackerGroup1"^^xsd:string)
+ClassAssertion(malont:AttackerGroup malont:AttackerGroup1)
+ObjectPropertyAssertion(malont:accessInformation malont:AttackerGroup1 malont:FinancialInformation1)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:AttackerGroup1 malont:ExploitTargetObject1)
+
+# Individual: malont:AttackerGroup2 (AttackerGroup2)
+
+AnnotationAssertion(rdfs:label malont:AttackerGroup2 "AttackerGroup2"^^xsd:string)
+ClassAssertion(malont:AttackerGroup malont:AttackerGroup2)
+ObjectPropertyAssertion(malont:accessInformation malont:AttackerGroup2 malont:FinancialInformation2)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:AttackerGroup2 malont:ExploitTargetObject2)
+
+# Individual: malont:AttackerGroup3 (AttackerGroup3)
+
+AnnotationAssertion(rdfs:label malont:AttackerGroup3 "AttackerGroup3"^^xsd:string)
+ClassAssertion(malont:AttackerGroup malont:AttackerGroup3)
+ObjectPropertyAssertion(malont:accessInformation malont:AttackerGroup3 malont:Information1)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:AttackerGroup3 malont:ExploitTargetObject3)
+
+# Individual: malont:AttackerGroup4 (AttackerGroup4)
+
+AnnotationAssertion(rdfs:label malont:AttackerGroup4 "AttackerGroup4"^^xsd:string)
+ClassAssertion(malont:AttackerGroup malont:AttackerGroup4)
+ObjectPropertyAssertion(malont:accessInformation malont:AttackerGroup4 malont:FinancialInformation1)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:AttackerGroup4 malont:ExploitTargetObject4)
+
+# Individual: malont:AuthenticationHash1 (AuthenticationHash1)
+
+AnnotationAssertion(rdfs:label malont:AuthenticationHash1 "AuthenticationHash1"^^xsd:string)
+ClassAssertion(malont:AuthenticationHash malont:AuthenticationHash1)
+
+# Individual: malont:AuthenticationHash2 (AuthenticationHash2)
+
+AnnotationAssertion(rdfs:label malont:AuthenticationHash2 "AuthenticationHash2"^^xsd:string)
+ClassAssertion(malont:AuthenticationHash malont:AuthenticationHash2)
+
+# Individual: malont:AuthenticationHash3 (AuthenticationHash3)
+
+AnnotationAssertion(rdfs:label malont:AuthenticationHash3 "AuthenticationHash3"^^xsd:string)
+ClassAssertion(malont:AuthenticationHash malont:AuthenticationHash3)
+
+# Individual: malont:AuthenticationHash4 (AuthenticationHash4)
+
+AnnotationAssertion(rdfs:label malont:AuthenticationHash4 "AuthenticationHash4"^^xsd:string)
+ClassAssertion(malont:AuthenticationHash malont:AuthenticationHash4)
+
+# Individual: malont:BusinessInformation1 (BusinessInformation1)
+
+AnnotationAssertion(rdfs:label malont:BusinessInformation1 "BusinessInformation1"^^xsd:string)
+ClassAssertion(malont:BusinessInformation malont:BusinessInformation1)
+
+# Individual: malont:BusinessInformation2 (BusinessInformation2)
+
+AnnotationAssertion(rdfs:label malont:BusinessInformation2 "BusinessInformation2"^^xsd:string)
+ClassAssertion(malont:BusinessInformation malont:BusinessInformation2)
+
+# Individual: malont:BusinessInformation3 (BusinessInformation3)
+
+AnnotationAssertion(rdfs:label malont:BusinessInformation3 "BusinessInformation3"^^xsd:string)
+ClassAssertion(malont:BusinessInformation malont:BusinessInformation3)
+
+# Individual: malont:BusinessInformation4 (BusinessInformation4)
+
+AnnotationAssertion(rdfs:label malont:BusinessInformation4 "BusinessInformation4"^^xsd:string)
+ClassAssertion(malont:BusinessInformation malont:BusinessInformation4)
+
+# Individual: malont:Campaign1 (Campaign1)
+
+AnnotationAssertion(rdfs:label malont:Campaign1 "Campaign1"^^xsd:string)
+ClassAssertion(malont:Campaign malont:Campaign1)
+ObjectPropertyAssertion(malont:exploits malont:Campaign1 malont:Vulnerability1)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Campaign1 malont:Location1)
+ObjectPropertyAssertion(malont:hasAttackerTime malont:Campaign1 malont:Time1)
+ObjectPropertyAssertion(malont:involvesMalware malont:Campaign1 malont:Malware1)
+ObjectPropertyAssertion(malont:similarTo malont:Campaign1 malont:Campaign1)
+ObjectPropertyAssertion(malont:usesDropper malont:Campaign1 malont:Dropper1)
+ObjectPropertyAssertion(malont:usesHost malont:Campaign1 malont:Host1)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Campaign1 malont:ExploitTargetObject1)
+
+# Individual: malont:Campaign2 (Campaign2)
+
+AnnotationAssertion(rdfs:label malont:Campaign2 "Campaign2"^^xsd:string)
+ClassAssertion(malont:Campaign malont:Campaign2)
+ObjectPropertyAssertion(malont:exploits malont:Campaign2 malont:Vulnerability2)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Campaign2 malont:Location2)
+ObjectPropertyAssertion(malont:hasAttackerTime malont:Campaign2 malont:Time2)
+ObjectPropertyAssertion(malont:involvesMalware malont:Campaign2 malont:Malware2)
+ObjectPropertyAssertion(malont:similarTo malont:Campaign2 malont:Campaign2)
+ObjectPropertyAssertion(malont:usesDropper malont:Campaign2 malont:Dropper2)
+ObjectPropertyAssertion(malont:usesHost malont:Campaign2 malont:Host2)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Campaign2 malont:ExploitTargetObject2)
+
+# Individual: malont:Campaign3 (Campaign3)
+
+AnnotationAssertion(rdfs:label malont:Campaign3 "Campaign3"^^xsd:string)
+ClassAssertion(malont:Campaign malont:Campaign3)
+ObjectPropertyAssertion(malont:exploits malont:Campaign3 malont:Vulnerability3)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Campaign3 malont:Location3)
+ObjectPropertyAssertion(malont:hasAttackerTime malont:Campaign3 malont:Time3)
+ObjectPropertyAssertion(malont:involvesMalware malont:Campaign3 malont:Malware3)
+ObjectPropertyAssertion(malont:similarTo malont:Campaign3 malont:Campaign3)
+ObjectPropertyAssertion(malont:usesDropper malont:Campaign3 malont:Dropper3)
+ObjectPropertyAssertion(malont:usesHost malont:Campaign3 malont:Host3)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Campaign3 malont:ExploitTargetObject3)
+
+# Individual: malont:Campaign4 (Campaign4)
+
+AnnotationAssertion(rdfs:label malont:Campaign4 "Campaign4"^^xsd:string)
+ClassAssertion(malont:Campaign malont:Campaign4)
+ObjectPropertyAssertion(malont:exploits malont:Campaign4 malont:Vulnerability4)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Campaign4 malont:Location4)
+ObjectPropertyAssertion(malont:hasAttackerTime malont:Campaign4 malont:Time4)
+ObjectPropertyAssertion(malont:involvesMalware malont:Campaign4 malont:Malware4)
+ObjectPropertyAssertion(malont:similarTo malont:Campaign4 malont:Campaign4)
+ObjectPropertyAssertion(malont:usesDropper malont:Campaign4 malont:Dropper4)
+ObjectPropertyAssertion(malont:usesHost malont:Campaign4 malont:Host4)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Campaign4 malont:ExploitTargetObject4)
+
+# Individual: malont:CopyAction1 (CopyAction1)
+
+AnnotationAssertion(rdfs:label malont:CopyAction1 "CopyAction1"^^xsd:string)
+ClassAssertion(malont:CopyAction malont:CopyAction1)
+
+# Individual: malont:CopyAction2 (CopyAction2)
+
+AnnotationAssertion(rdfs:label malont:CopyAction2 "CopyAction2"^^xsd:string)
+ClassAssertion(malont:CopyAction malont:CopyAction2)
+
+# Individual: malont:CopyAction3 (CopyAction3)
+
+AnnotationAssertion(rdfs:label malont:CopyAction3 "CopyAction3"^^xsd:string)
+ClassAssertion(malont:CopyAction malont:CopyAction3)
+
+# Individual: malont:CopyAction4 (CopyAction4)
+
+AnnotationAssertion(rdfs:label malont:CopyAction4 "CopyAction4"^^xsd:string)
+ClassAssertion(malont:CopyAction malont:CopyAction4)
+
+# Individual: malont:Country1 (Country1)
+
+AnnotationAssertion(rdfs:label malont:Country1 "Country1"^^xsd:string)
+ClassAssertion(malont:Country malont:Country1)
+
+# Individual: malont:Country2 (Country2)
+
+AnnotationAssertion(rdfs:label malont:Country2 "Country2"^^xsd:string)
+ClassAssertion(malont:Country malont:Country2)
+
+# Individual: malont:Country3 (Country3)
+
+AnnotationAssertion(rdfs:label malont:Country3 "Country3"^^xsd:string)
+ClassAssertion(malont:Country malont:Country3)
+
+# Individual: malont:Country4 (Country4)
+
+AnnotationAssertion(rdfs:label malont:Country4 "Country4"^^xsd:string)
+ClassAssertion(malont:Country malont:Country4)
+
+# Individual: malont:CourseOfAction1 (CourseOfAction1)
+
+AnnotationAssertion(rdfs:label malont:CourseOfAction1 "CourseOfAction1"^^xsd:string)
+ClassAssertion(malont:CourseOfAction malont:CourseOfAction1)
+
+# Individual: malont:CourseOfAction2 (CourseOfAction2)
+
+AnnotationAssertion(rdfs:label malont:CourseOfAction2 "CourseOfAction2"^^xsd:string)
+ClassAssertion(malont:CourseOfAction malont:CourseOfAction2)
+
+# Individual: malont:CourseOfAction3 (CourseOfAction3)
+
+AnnotationAssertion(rdfs:label malont:CourseOfAction3 "CourseOfAction3"^^xsd:string)
+ClassAssertion(malont:CourseOfAction malont:CourseOfAction3)
+
+# Individual: malont:CourseOfAction4 (CourseOfAction4)
+
+AnnotationAssertion(rdfs:label malont:CourseOfAction4 "CourseOfAction4"^^xsd:string)
+ClassAssertion(malont:CourseOfAction malont:CourseOfAction4)
+
+# Individual: malont:DataSource1 (DataSource1)
+
+AnnotationAssertion(rdfs:label malont:DataSource1 "DataSource1"^^xsd:string)
+ClassAssertion(malont:DataSource malont:DataSource1)
+
+# Individual: malont:DataSource2 (DataSource2)
+
+AnnotationAssertion(rdfs:label malont:DataSource2 "DataSource2"^^xsd:string)
+ClassAssertion(malont:DataSource malont:DataSource2)
+
+# Individual: malont:DataSource3 (DataSource3)
+
+AnnotationAssertion(rdfs:label malont:DataSource3 "DataSource3"^^xsd:string)
+ClassAssertion(malont:DataSource malont:DataSource3)
+
+# Individual: malont:DataSource4 (DataSource4)
+
+AnnotationAssertion(rdfs:label malont:DataSource4 "DataSource4"^^xsd:string)
+ClassAssertion(malont:DataSource malont:DataSource4)
+
+# Individual: malont:DigitalAction1 (DigitalAction1)
+
+AnnotationAssertion(rdfs:label malont:DigitalAction1 "DigitalAction1"^^xsd:string)
+ClassAssertion(malont:DigitalAction malont:DigitalAction1)
+
+# Individual: malont:DigitalAction2 (DigitalAction2)
+
+AnnotationAssertion(rdfs:label malont:DigitalAction2 "DigitalAction2"^^xsd:string)
+ClassAssertion(malont:DigitalAction malont:DigitalAction2)
+
+# Individual: malont:DigitalAction3 (DigitalAction3)
+
+AnnotationAssertion(rdfs:label malont:DigitalAction3 "DigitalAction3"^^xsd:string)
+ClassAssertion(malont:DigitalAction malont:DigitalAction3)
+
+# Individual: malont:DigitalAction4 (DigitalAction4)
+
+AnnotationAssertion(rdfs:label malont:DigitalAction4 "DigitalAction4"^^xsd:string)
+ClassAssertion(malont:DigitalAction malont:DigitalAction4)
+
+# Individual: malont:DriversLicenseNumber1 (DriversLicenseNumber1)
+
+AnnotationAssertion(rdfs:label malont:DriversLicenseNumber1 "DriversLicenseNumber1"^^xsd:string)
+ClassAssertion(malont:DriversLicenseNumber malont:DriversLicenseNumber1)
+
+# Individual: malont:DriversLicenseNumber2 (DriversLicenseNumber2)
+
+AnnotationAssertion(rdfs:label malont:DriversLicenseNumber2 "DriversLicenseNumber2"^^xsd:string)
+ClassAssertion(malont:DriversLicenseNumber malont:DriversLicenseNumber2)
+
+# Individual: malont:DriversLicenseNumber3 (DriversLicenseNumber3)
+
+AnnotationAssertion(rdfs:label malont:DriversLicenseNumber3 "DriversLicenseNumber3"^^xsd:string)
+ClassAssertion(malont:DriversLicenseNumber malont:DriversLicenseNumber3)
+
+# Individual: malont:DriversLicenseNumber4 (DriversLicenseNumber4)
+
+AnnotationAssertion(rdfs:label malont:DriversLicenseNumber4 "DriversLicenseNumber4"^^xsd:string)
+ClassAssertion(malont:DriversLicenseNumber malont:DriversLicenseNumber4)
+
+# Individual: malont:Dropper1 (Dropper1)
+
+AnnotationAssertion(rdfs:label malont:Dropper1 "Dropper1"^^xsd:string)
+ClassAssertion(malont:Dropper malont:Dropper1)
+
+# Individual: malont:Dropper2 (Dropper2)
+
+AnnotationAssertion(rdfs:label malont:Dropper2 "Dropper2"^^xsd:string)
+ClassAssertion(malont:Dropper malont:Dropper2)
+
+# Individual: malont:Dropper3 (Dropper3)
+
+AnnotationAssertion(rdfs:label malont:Dropper3 "Dropper3"^^xsd:string)
+ClassAssertion(malont:Dropper malont:Dropper3)
+
+# Individual: malont:Dropper4 (Dropper4)
+
+AnnotationAssertion(rdfs:label malont:Dropper4 "Dropper4"^^xsd:string)
+ClassAssertion(malont:Dropper malont:Dropper4)
+
+# Individual: malont:Email1 (Email1)
+
+AnnotationAssertion(rdfs:label malont:Email1 "Email1"^^xsd:string)
+ClassAssertion(untitled-ontology-16:Email malont:Email1)
+ObjectPropertyAssertion(malont:hasAttachment malont:Email1 malont:File1)
+ObjectPropertyAssertion(malont:hasAttackerLocation malont:Email1 malont:Location1)
+DataPropertyAssertion(malont:hasEmailAddress malont:Email1 "emailAddress1"^^xsd:string)
+DataPropertyAssertion(untitled-ontology-16:hasEmailSubject malont:Email1 "emailSubject1"^^xsd:string)
+
+# Individual: malont:Email2 (Email2)
+
+AnnotationAssertion(rdfs:label malont:Email2 "Email2"^^xsd:string)
+ClassAssertion(untitled-ontology-16:Email malont:Email2)
+ObjectPropertyAssertion(malont:hasAttachment malont:Email2 malont:File2)
+DataPropertyAssertion(malont:hasEmailAddress malont:Email2 "emailAddress2"^^xsd:string)
+DataPropertyAssertion(untitled-ontology-16:hasEmailSubject malont:Email2 "emailSubject2"^^xsd:string)
+
+# Individual: malont:Email3 (Email3)
+
+AnnotationAssertion(rdfs:label malont:Email3 "Email3"^^xsd:string)
+ClassAssertion(untitled-ontology-16:Email malont:Email3)
+ObjectPropertyAssertion(malont:hasAttachment malont:Email3 malont:File3)
+DataPropertyAssertion(malont:hasEmailAddress malont:Email3 "emailAddress3"^^xsd:string)
+DataPropertyAssertion(untitled-ontology-16:hasEmailSubject malont:Email3 "emailSubject3"^^xsd:string)
+
+# Individual: malont:Email4 (Email4)
+
+AnnotationAssertion(rdfs:label malont:Email4 "Email4"^^xsd:string)
+ClassAssertion(untitled-ontology-16:Email malont:Email4)
+ObjectPropertyAssertion(malont:hasAttachment malont:Email4 malont:File4)
+DataPropertyAssertion(malont:hasEmailAddress malont:Email4 "emailAddress4"^^xsd:string)
+DataPropertyAssertion(untitled-ontology-16:hasEmailSubject malont:Email4 "emailSubject4"^^xsd:string)
+
+# Individual: malont:EmailAction1 (EmailAction1)
+
+AnnotationAssertion(rdfs:label malont:EmailAction1 "EmailAction1"^^xsd:string)
+ClassAssertion(malont:EmailAction malont:EmailAction1)
+
+# Individual: malont:EmailAction2 (EmailAction2)
+
+AnnotationAssertion(rdfs:label malont:EmailAction2 "EmailAction2"^^xsd:string)
+ClassAssertion(malont:EmailAction malont:EmailAction2)
+
+# Individual: malont:EmailAction3 (EmailAction3)
+
+AnnotationAssertion(rdfs:label malont:EmailAction3 "EmailAction3"^^xsd:string)
+ClassAssertion(malont:EmailAction malont:EmailAction3)
+
+# Individual: malont:EmailAction4 (EmailAction4)
+
+AnnotationAssertion(rdfs:label malont:EmailAction4 "EmailAction4"^^xsd:string)
+ClassAssertion(malont:EmailAction malont:EmailAction4)
+
+# Individual: malont:Event1 (Event1)
+
+AnnotationAssertion(rdfs:label malont:Event1 "Event1"^^xsd:string)
+ClassAssertion(malont:Event malont:Event1)
+
+# Individual: malont:Event2 (Event2)
+
+AnnotationAssertion(rdfs:label malont:Event2 "Event2"^^xsd:string)
+ClassAssertion(malont:Event malont:Event2)
+
+# Individual: malont:Event3 (Event3)
+
+AnnotationAssertion(rdfs:label malont:Event3 "Event3"^^xsd:string)
+ClassAssertion(malont:Event malont:Event3)
+
+# Individual: malont:Event4 (Event4)
+
+AnnotationAssertion(rdfs:label malont:Event4 "Event4"^^xsd:string)
+ClassAssertion(malont:Event malont:Event4)
+
+# Individual: malont:Exploit1 (Exploit1)
+
+AnnotationAssertion(rdfs:label malont:Exploit1 "Exploit1"^^xsd:string)
+ClassAssertion(malont:Exploit malont:Exploit1)
+
+# Individual: malont:Exploit2 (Exploit2)
+
+AnnotationAssertion(rdfs:label malont:Exploit2 "Exploit2"^^xsd:string)
+ClassAssertion(malont:Exploit malont:Exploit2)
+
+# Individual: malont:Exploit3 (Exploit3)
+
+AnnotationAssertion(rdfs:label malont:Exploit3 "Exploit3"^^xsd:string)
+ClassAssertion(malont:Exploit malont:Exploit3)
+
+# Individual: malont:Exploit4 (Exploit4)
+
+AnnotationAssertion(rdfs:label malont:Exploit4 "Exploit4"^^xsd:string)
+ClassAssertion(malont:Exploit malont:Exploit4)
+
+# Individual: malont:ExploitTargetObject1 (ExploitTargetObject1)
+
+AnnotationAssertion(rdfs:label malont:ExploitTargetObject1 "ExploitTargetObject1"^^xsd:string)
+ClassAssertion(malont:ExploitTargetObject malont:ExploitTargetObject1)
+ObjectPropertyAssertion(malont:hasType malont:ExploitTargetObject1 malont:Person1)
+ObjectPropertyAssertion(malont:hasVulnerability malont:ExploitTargetObject1 malont:Vulnerability1)
+
+# Individual: malont:ExploitTargetObject2 (ExploitTargetObject2)
+
+AnnotationAssertion(rdfs:label malont:ExploitTargetObject2 "ExploitTargetObject2"^^xsd:string)
+ClassAssertion(malont:ExploitTargetObject malont:ExploitTargetObject2)
+ObjectPropertyAssertion(malont:hasType malont:ExploitTargetObject2 malont:Person2)
+ObjectPropertyAssertion(malont:hasVulnerability malont:ExploitTargetObject2 malont:Vulnerability2)
+
+# Individual: malont:ExploitTargetObject3 (ExploitTargetObject3)
+
+AnnotationAssertion(rdfs:label malont:ExploitTargetObject3 "ExploitTargetObject3"^^xsd:string)
+ClassAssertion(malont:ExploitTargetObject malont:ExploitTargetObject3)
+ObjectPropertyAssertion(malont:hasType malont:ExploitTargetObject3 malont:Person3)
+ObjectPropertyAssertion(malont:hasVulnerability malont:ExploitTargetObject3 malont:Vulnerability3)
+
+# Individual: malont:ExploitTargetObject4 (ExploitTargetObject4)
+
+AnnotationAssertion(rdfs:label malont:ExploitTargetObject4 "ExploitTargetObject4"^^xsd:string)
+ClassAssertion(malont:ExploitTargetObject malont:ExploitTargetObject4)
+ObjectPropertyAssertion(malont:hasVulnerability malont:ExploitTargetObject4 malont:Vulnerability4)
+
+# Individual: malont:File1 (File1)
+
+AnnotationAssertion(rdfs:label malont:File1 "File1"^^xsd:string)
+ClassAssertion(malont:File malont:File1)
+DataPropertyAssertion(malont:hasFileExtension malont:File1 "fileExtension1"^^xsd:string)
+DataPropertyAssertion(malont:hasFileName malont:File1 "fileName1"^^xsd:string)
+DataPropertyAssertion(malont:hasFilePath malont:File1 "filePath1"^^xsd:string)
+DataPropertyAssertion(malont:hasFileSize malont:File1 "fileSize1"^^xsd:string)
+DataPropertyAssertion(malont:hasFileType malont:File1 "fileType1"^^xsd:string)
+
+# Individual: malont:File2 (File2)
+
+AnnotationAssertion(rdfs:label malont:File2 "File2"^^xsd:string)
+ClassAssertion(malont:File malont:File2)
+DataPropertyAssertion(malont:hasFileExtension malont:File2 "fileExtension2"^^xsd:string)
+DataPropertyAssertion(malont:hasFileName malont:File2 "fileName2"^^xsd:string)
+DataPropertyAssertion(malont:hasFilePath malont:File2 "filePath2"^^xsd:string)
+DataPropertyAssertion(malont:hasFileSize malont:File2 "fileSize2"^^xsd:string)
+DataPropertyAssertion(malont:hasFileType malont:File2 "fileType2"^^xsd:string)
+
+# Individual: malont:File3 (File3)
+
+AnnotationAssertion(rdfs:label malont:File3 "File3"^^xsd:string)
+ClassAssertion(malont:File malont:File3)
+DataPropertyAssertion(malont:hasFileExtension malont:File3 "fileExtension3"^^xsd:string)
+DataPropertyAssertion(malont:hasFileName malont:File3 "fileName3"^^xsd:string)
+DataPropertyAssertion(malont:hasFilePath malont:File3 "filePath3"^^xsd:string)
+DataPropertyAssertion(malont:hasFileSize malont:File3 "fileSize3"^^xsd:string)
+DataPropertyAssertion(malont:hasFileType malont:File3 "fileType3"^^xsd:string)
+
+# Individual: malont:File4 (File4)
+
+AnnotationAssertion(rdfs:label malont:File4 "File4"^^xsd:string)
+ClassAssertion(malont:File malont:File4)
+DataPropertyAssertion(malont:hasFileExtension malont:File4 "fileExtension4"^^xsd:string)
+DataPropertyAssertion(malont:hasFileName malont:File4 "fileName4"^^xsd:string)
+DataPropertyAssertion(malont:hasFilePath malont:File4 "filePath4"^^xsd:string)
+DataPropertyAssertion(malont:hasFileSize malont:File4 "fileSize4"^^xsd:string)
+DataPropertyAssertion(malont:hasFileType malont:File4 "fileType4"^^xsd:string)
+
+# Individual: malont:FinancialInformation1 (FinancialInformation1)
+
+AnnotationAssertion(rdfs:label malont:FinancialInformation1 "FinancialInformation1"^^xsd:string)
+ClassAssertion(malont:FinancialInformation malont:FinancialInformation1)
+
+# Individual: malont:FinancialInformation2 (FinancialInformation2)
+
+AnnotationAssertion(rdfs:label malont:FinancialInformation2 "FinancialInformation2"^^xsd:string)
+ClassAssertion(malont:FinancialInformation malont:FinancialInformation2)
+
+# Individual: malont:FinancialInformation3 (FinancialInformation3)
+
+AnnotationAssertion(rdfs:label malont:FinancialInformation3 "FinancialInformation3"^^xsd:string)
+ClassAssertion(malont:FinancialInformation malont:FinancialInformation3)
+
+# Individual: malont:FinancialInformation4 (FinancialInformation4)
+
+AnnotationAssertion(rdfs:label malont:FinancialInformation4 "FinancialInformation4"^^xsd:string)
+ClassAssertion(malont:FinancialInformation malont:FinancialInformation4)
+
+# Individual: malont:FinancialTransactionAction1 (FinancialTransactionAction1)
+
+AnnotationAssertion(rdfs:label malont:FinancialTransactionAction1 "FinancialTransactionAction1"^^xsd:string)
+ClassAssertion(malont:FinancialTransactionAction malont:FinancialTransactionAction1)
+
+# Individual: malont:FinancialTransactionAction2 (FinancialTransactionAction2)
+
+AnnotationAssertion(rdfs:label malont:FinancialTransactionAction2 "FinancialTransactionAction2"^^xsd:string)
+ClassAssertion(malont:FinancialTransactionAction malont:FinancialTransactionAction2)
+
+# Individual: malont:FinancialTransactionAction3 (FinancialTransactionAction3)
+
+AnnotationAssertion(rdfs:label malont:FinancialTransactionAction3 "FinancialTransactionAction3"^^xsd:string)
+ClassAssertion(malont:FinancialTransactionAction malont:FinancialTransactionAction3)
+
+# Individual: malont:FinancialTransactionAction4 (FinancialTransactionAction4)
+
+AnnotationAssertion(rdfs:label malont:FinancialTransactionAction4 "FinancialTransactionAction4"^^xsd:string)
+ClassAssertion(malont:FinancialTransactionAction malont:FinancialTransactionAction4)
+
+# Individual: malont:GeneralVirus1 (GeneralVirus1)
+
+AnnotationAssertion(rdfs:label malont:GeneralVirus1 "GeneralVirus1"^^xsd:string)
+ClassAssertion(malont:GeneralVirus malont:GeneralVirus1)
+
+# Individual: malont:GeneralVirus2 (GeneralVirus2)
+
+AnnotationAssertion(rdfs:label malont:GeneralVirus2 "GeneralVirus2"^^xsd:string)
+ClassAssertion(malont:GeneralVirus malont:GeneralVirus2)
+
+# Individual: malont:GeneralVirus3 (GeneralVirus3)
+
+AnnotationAssertion(rdfs:label malont:GeneralVirus3 "GeneralVirus3"^^xsd:string)
+ClassAssertion(malont:GeneralVirus malont:GeneralVirus3)
+
+# Individual: malont:GeneralVirus4 (GeneralVirus4)
+
+AnnotationAssertion(rdfs:label malont:GeneralVirus4 "GeneralVirus4"^^xsd:string)
+ClassAssertion(malont:GeneralVirus malont:GeneralVirus4)
+
+# Individual: malont:Hash1 (Hash1)
+
+AnnotationAssertion(rdfs:label malont:Hash1 "Hash1"^^xsd:string)
+ClassAssertion(malont:Hash malont:Hash1)
+
+# Individual: malont:Hash2 (Hash2)
+
+AnnotationAssertion(rdfs:label malont:Hash2 "Hash2"^^xsd:string)
+ClassAssertion(malont:Hash malont:Hash2)
+
+# Individual: malont:Hash3 (Hash3)
+
+AnnotationAssertion(rdfs:label malont:Hash3 "Hash3"^^xsd:string)
+ClassAssertion(malont:Hash malont:Hash3)
+
+# Individual: malont:Hash4 (Hash4)
+
+AnnotationAssertion(rdfs:label malont:Hash4 "Hash4"^^xsd:string)
+ClassAssertion(malont:Hash malont:Hash4)
+
+# Individual: malont:Host1 (Host1)
+
+AnnotationAssertion(rdfs:label malont:Host1 "Host1"^^xsd:string)
+ClassAssertion(malont:Host malont:Host1)
+ObjectPropertyAssertion(malont:runsSoftware malont:Host1 malont:Software1)
+ObjectPropertyAssertion(malont:usesAddress malont:Host1 malont:Address1)
+
+# Individual: malont:Host2 (Host2)
+
+AnnotationAssertion(rdfs:label malont:Host2 "Host2"^^xsd:string)
+ClassAssertion(malont:Host malont:Host2)
+ObjectPropertyAssertion(malont:runsSoftware malont:Host2 malont:Software2)
+ObjectPropertyAssertion(malont:usesAddress malont:Host2 malont:Address2)
+
+# Individual: malont:Host3 (Host3)
+
+AnnotationAssertion(rdfs:label malont:Host3 "Host3"^^xsd:string)
+ClassAssertion(malont:Host malont:Host3)
+ObjectPropertyAssertion(malont:runsSoftware malont:Host3 malont:Software3)
+ObjectPropertyAssertion(malont:usesAddress malont:Host3 malont:Address3)
+
+# Individual: malont:Host4 (Host4)
+
+AnnotationAssertion(rdfs:label malont:Host4 "Host4"^^xsd:string)
+ClassAssertion(malont:Host malont:Host4)
+ObjectPropertyAssertion(malont:runsSoftware malont:Host4 malont:Software4)
+ObjectPropertyAssertion(malont:usesAddress malont:Host4 malont:Address4)
+
+# Individual: malont:Indicator1 (Indicator1)
+
+AnnotationAssertion(rdfs:label malont:Indicator1 "Indicator1"^^xsd:string)
+ClassAssertion(untitled-ontology-16:Indicator malont:Indicator1)
+ObjectPropertyAssertion(malont:indicates malont:Indicator1 malont:Malware1)
+
+# Individual: malont:Indicator2 (Indicator2)
+
+AnnotationAssertion(rdfs:label malont:Indicator2 "Indicator2"^^xsd:string)
+ClassAssertion(untitled-ontology-16:Indicator malont:Indicator2)
+ObjectPropertyAssertion(malont:indicates malont:Indicator2 malont:Malware2)
+
+# Individual: malont:Indicator3 (Indicator3)
+
+AnnotationAssertion(rdfs:label malont:Indicator3 "Indicator3"^^xsd:string)
+ClassAssertion(untitled-ontology-16:Indicator malont:Indicator3)
+ObjectPropertyAssertion(malont:indicates malont:Indicator3 malont:Malware3)
+
+# Individual: malont:Indicator4 (Indicator4)
+
+AnnotationAssertion(rdfs:label malont:Indicator4 "Indicator4"^^xsd:string)
+ClassAssertion(untitled-ontology-16:Indicator malont:Indicator4)
+ObjectPropertyAssertion(malont:indicates malont:Indicator4 malont:Malware4)
+
+# Individual: malont:Information1 (Information1)
+
+AnnotationAssertion(rdfs:label malont:Information1 "Information1"^^xsd:string)
+ClassAssertion(malont:Information malont:Information1)
+
+# Individual: malont:Information2 (Information2)
+
+AnnotationAssertion(rdfs:label malont:Information2 "Information2"^^xsd:string)
+ClassAssertion(malont:Information malont:Information2)
+
+# Individual: malont:Information3 (Information3)
+
+AnnotationAssertion(rdfs:label malont:Information3 "Information3"^^xsd:string)
+ClassAssertion(malont:Information malont:Information3)
+
+# Individual: malont:Information4 (Information4)
+
+AnnotationAssertion(rdfs:label malont:Information4 "Information4"^^xsd:string)
+ClassAssertion(malont:Information malont:Information4)
+
+# Individual: malont:InstallAction1 (InstallAction1)
+
+AnnotationAssertion(rdfs:label malont:InstallAction1 "InstallAction1"^^xsd:string)
+ClassAssertion(malont:InstallAction malont:InstallAction1)
+
+# Individual: malont:InstallAction2 (InstallAction2)
+
+AnnotationAssertion(rdfs:label malont:InstallAction2 "InstallAction2"^^xsd:string)
+ClassAssertion(malont:InstallAction malont:InstallAction2)
+
+# Individual: malont:InstallAction3 (InstallAction3)
+
+AnnotationAssertion(rdfs:label malont:InstallAction3 "InstallAction3"^^xsd:string)
+ClassAssertion(malont:InstallAction malont:InstallAction3)
+
+# Individual: malont:InstallAction4 (InstallAction4)
+
+AnnotationAssertion(rdfs:label malont:InstallAction4 "InstallAction4"^^xsd:string)
+ClassAssertion(malont:InstallAction malont:InstallAction4)
+
+# Individual: malont:Locality1 (Locality1)
+
+AnnotationAssertion(rdfs:label malont:Locality1 "Locality1"^^xsd:string)
+ClassAssertion(malont:Locality malont:Locality1)
+
+# Individual: malont:Locality2 (Locality2)
+
+AnnotationAssertion(rdfs:label malont:Locality2 "Locality2"^^xsd:string)
+ClassAssertion(malont:Locality malont:Locality2)
+
+# Individual: malont:Locality3 (Locality3)
+
+AnnotationAssertion(rdfs:label malont:Locality3 "Locality3"^^xsd:string)
+ClassAssertion(malont:Locality malont:Locality3)
+
+# Individual: malont:Locality4 (Locality4)
+
+AnnotationAssertion(rdfs:label malont:Locality4 "Locality4"^^xsd:string)
+ClassAssertion(malont:Locality malont:Locality4)
+
+# Individual: malont:Location1 (Location1)
+
+AnnotationAssertion(rdfs:label malont:Location1 "Location1"^^xsd:string)
+ClassAssertion(malont:Location malont:Location1)
+
+# Individual: malont:Location2 (Location2)
+
+AnnotationAssertion(rdfs:label malont:Location2 "Location2"^^xsd:string)
+ClassAssertion(malont:Location malont:Location2)
+
+# Individual: malont:Location3 (Location3)
+
+AnnotationAssertion(rdfs:label malont:Location3 "Location3"^^xsd:string)
+ClassAssertion(malont:Location malont:Location3)
+
+# Individual: malont:Location4 (Location4)
+
+AnnotationAssertion(rdfs:label malont:Location4 "Location4"^^xsd:string)
+ClassAssertion(malont:Location malont:Location4)
+
+# Individual: malont:MD5_1 (MD5_1)
+
+AnnotationAssertion(rdfs:label malont:MD5_1 "MD5_1"^^xsd:string)
+ClassAssertion(malont:MD5 malont:MD5_1)
+
+# Individual: malont:MD5_2 (MD5_2)
+
+AnnotationAssertion(rdfs:label malont:MD5_2 "MD5_2"^^xsd:string)
+ClassAssertion(malont:MD5 malont:MD5_2)
+
+# Individual: malont:MD5_3 (MD5_3)
+
+AnnotationAssertion(rdfs:label malont:MD5_3 "MD5_3"^^xsd:string)
+ClassAssertion(malont:MD5 malont:MD5_3)
+
+# Individual: malont:MD5_4 (MD5_4)
+
+AnnotationAssertion(rdfs:label malont:MD5_4 "MD5_4"^^xsd:string)
+ClassAssertion(malont:MD5 malont:MD5_4)
+
+# Individual: malont:Malware1 (Malware1)
+
+AnnotationAssertion(rdfs:label malont:Malware1 "Malware1"^^xsd:string)
+ClassAssertion(malont:Malware malont:Malware1)
+ObjectPropertyAssertion(malont:exploits malont:Malware1 malont:Vulnerability1)
+ObjectPropertyAssertion(malont:hasAuthor malont:Malware1 malont:Attacker1)
+ObjectPropertyAssertion(malont:hasCharacteristics malont:Malware1 malont:MalwareCharacteristics1)
+ObjectPropertyAssertion(malont:hasFamily malont:Malware1 malont:MalwareFamily1)
+ObjectPropertyAssertion(malont:indicatedBy malont:Malware1 malont:Indicator1)
+ObjectPropertyAssertion(malont:usesAddress malont:Malware1 malont:Address1)
+ObjectPropertyAssertion(malont:usesDropper malont:Malware1 malont:Dropper1)
+ObjectPropertyAssertion(malont:usesHost malont:Malware1 malont:Host1)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Malware1 malont:ExploitTargetObject1)
+
+# Individual: malont:Malware2 (Malware2)
+
+AnnotationAssertion(rdfs:label malont:Malware2 "Malware2"^^xsd:string)
+ClassAssertion(malont:Malware malont:Malware2)
+ObjectPropertyAssertion(malont:exploits malont:Malware2 malont:Vulnerability2)
+ObjectPropertyAssertion(malont:hasAuthor malont:Malware2 malont:Attacker2)
+ObjectPropertyAssertion(malont:hasCharacteristics malont:Malware2 malont:MalwareCharacteristics2)
+ObjectPropertyAssertion(malont:hasFamily malont:Malware2 malont:MalwareFamily2)
+ObjectPropertyAssertion(malont:indicatedBy malont:Malware2 malont:Indicator2)
+ObjectPropertyAssertion(malont:usesAddress malont:Malware2 malont:Address1)
+ObjectPropertyAssertion(malont:usesDropper malont:Malware2 malont:Dropper2)
+ObjectPropertyAssertion(malont:usesHost malont:Malware2 malont:Host2)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Malware2 malont:ExploitTargetObject2)
+
+# Individual: malont:Malware3 (Malware3)
+
+AnnotationAssertion(rdfs:label malont:Malware3 "Malware3"^^xsd:string)
+ClassAssertion(malont:Malware malont:Malware3)
+ObjectPropertyAssertion(malont:exploits malont:Malware3 malont:Vulnerability3)
+ObjectPropertyAssertion(malont:hasAuthor malont:Malware3 malont:Attacker3)
+ObjectPropertyAssertion(malont:hasCharacteristics malont:Malware3 malont:MalwareCharacteristics3)
+ObjectPropertyAssertion(malont:hasFamily malont:Malware3 malont:MalwareFamily3)
+ObjectPropertyAssertion(malont:indicatedBy malont:Malware3 malont:Indicator3)
+ObjectPropertyAssertion(malont:usesAddress malont:Malware3 malont:Address3)
+ObjectPropertyAssertion(malont:usesDropper malont:Malware3 malont:Dropper3)
+ObjectPropertyAssertion(malont:usesHost malont:Malware3 malont:Host3)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Malware3 malont:ExploitTargetObject3)
+
+# Individual: malont:Malware4 (Malware4)
+
+AnnotationAssertion(rdfs:label malont:Malware4 "Malware4"^^xsd:string)
+ClassAssertion(malont:Malware malont:Malware4)
+ObjectPropertyAssertion(malont:exploits malont:Malware4 malont:Vulnerability4)
+ObjectPropertyAssertion(malont:hasAuthor malont:Malware4 malont:Attacker4)
+ObjectPropertyAssertion(malont:hasCharacteristics malont:Malware4 malont:MalwareCharacteristics4)
+ObjectPropertyAssertion(malont:hasFamily malont:Malware4 malont:MalwareFamily4)
+ObjectPropertyAssertion(malont:indicatedBy malont:Malware4 malont:Indicator4)
+ObjectPropertyAssertion(malont:usesAddress malont:Malware4 malont:Address4)
+ObjectPropertyAssertion(malont:usesDropper malont:Malware4 malont:Dropper4)
+ObjectPropertyAssertion(malont:usesHost malont:Malware4 malont:Host4)
+ObjectPropertyAssertion(untitled-ontology-15:targets malont:Malware4 malont:ExploitTargetObject4)
+
+# Individual: malont:MalwareCharacteristics1 (MalwareCharacteristics1)
+
+AnnotationAssertion(rdfs:label malont:MalwareCharacteristics1 "MalwareCharacteristics1"^^xsd:string)
+ClassAssertion(malont:MalwareCharacteristics malont:MalwareCharacteristics1)
+
+# Individual: malont:MalwareCharacteristics2 (MalwareCharacteristics2)
+
+AnnotationAssertion(rdfs:label malont:MalwareCharacteristics2 "MalwareCharacteristics2"^^xsd:string)
+ClassAssertion(malont:MalwareCharacteristics malont:MalwareCharacteristics2)
+
+# Individual: malont:MalwareCharacteristics3 (MalwareCharacteristics3)
+
+AnnotationAssertion(rdfs:label malont:MalwareCharacteristics3 "MalwareCharacteristics3"^^xsd:string)
+ClassAssertion(malont:MalwareCharacteristics malont:MalwareCharacteristics3)
+
+# Individual: malont:MalwareCharacteristics4 (MalwareCharacteristics4)
+
+AnnotationAssertion(rdfs:label malont:MalwareCharacteristics4 "MalwareCharacteristics4"^^xsd:string)
+ClassAssertion(malont:MalwareCharacteristics malont:MalwareCharacteristics4)
+
+# Individual: malont:MalwareFamily1 (MalwareFamily1)
+
+AnnotationAssertion(rdfs:label malont:MalwareFamily1 "MalwareFamily1"^^xsd:string)
+ClassAssertion(malont:MalwareFamily malont:MalwareFamily1)
+ObjectPropertyAssertion(malont:hasMember malont:MalwareFamily1 malont:Malware1)
+
+# Individual: malont:MalwareFamily2 (MalwareFamily2)
+
+AnnotationAssertion(rdfs:label malont:MalwareFamily2 "MalwareFamily2"^^xsd:string)
+ClassAssertion(malont:MalwareFamily malont:MalwareFamily2)
+ObjectPropertyAssertion(malont:hasMember malont:MalwareFamily2 malont:Malware2)
+
+# Individual: malont:MalwareFamily3 (MalwareFamily3)
+
+AnnotationAssertion(rdfs:label malont:MalwareFamily3 "MalwareFamily3"^^xsd:string)
+ClassAssertion(malont:MalwareFamily malont:MalwareFamily3)
+ObjectPropertyAssertion(malont:hasMember malont:MalwareFamily3 malont:Malware3)
+
+# Individual: malont:MalwareFamily4 (MalwareFamily4)
+
+AnnotationAssertion(rdfs:label malont:MalwareFamily4 "MalwareFamily4"^^xsd:string)
+ClassAssertion(malont:MalwareFamily malont:MalwareFamily4)
+ObjectPropertyAssertion(malont:hasMember malont:MalwareFamily4 malont:Malware4)
+
+# Individual: malont:MedicalInformation1 (MedicalInformation1)
+
+AnnotationAssertion(rdfs:label malont:MedicalInformation1 "MedicalInformation1"^^xsd:string)
+ClassAssertion(malont:MedicalInformation malont:MedicalInformation1)
+
+# Individual: malont:MedicalInformation2 (MedicalInformation2)
+
+AnnotationAssertion(rdfs:label malont:MedicalInformation2 "MedicalInformation2"^^xsd:string)
+ClassAssertion(malont:MedicalInformation malont:MedicalInformation2)
+
+# Individual: malont:MedicalInformation3 (MedicalInformation3)
+
+AnnotationAssertion(rdfs:label malont:MedicalInformation3 "MedicalInformation3"^^xsd:string)
+ClassAssertion(malont:MedicalInformation malont:MedicalInformation3)
+
+# Individual: malont:MedicalInformation4 (MedicalInformation4)
+
+AnnotationAssertion(rdfs:label malont:MedicalInformation4 "MedicalInformation4"^^xsd:string)
+ClassAssertion(malont:MedicalInformation malont:MedicalInformation4)
+
+# Individual: malont:ModificationAction1 (ModificationAction1)
+
+AnnotationAssertion(rdfs:label malont:ModificationAction1 "ModificationAction1"^^xsd:string)
+ClassAssertion(malont:ModificationAction malont:ModificationAction1)
+
+# Individual: malont:ModificationAction2 (ModificationAction2)
+
+AnnotationAssertion(rdfs:label malont:ModificationAction2 "ModificationAction2"^^xsd:string)
+ClassAssertion(malont:ModificationAction malont:ModificationAction2)
+
+# Individual: malont:ModificationAction3 (ModificationAction3)
+
+AnnotationAssertion(rdfs:label malont:ModificationAction3 "ModificationAction3"^^xsd:string)
+ClassAssertion(malont:ModificationAction malont:ModificationAction3)
+
+# Individual: malont:ModificationAction4 (ModificationAction4)
+
+AnnotationAssertion(rdfs:label malont:ModificationAction4 "ModificationAction4"^^xsd:string)
+ClassAssertion(malont:ModificationAction malont:ModificationAction4)
+
+# Individual: malont:NetworkInformation1 (NetworkInformation1)
+
+AnnotationAssertion(rdfs:label malont:NetworkInformation1 "NetworkInformation1"^^xsd:string)
+ClassAssertion(malont:NetworkInformation malont:NetworkInformation1)
+
+# Individual: malont:NetworkInformation2 (NetworkInformation2)
+
+AnnotationAssertion(rdfs:label malont:NetworkInformation2 "NetworkInformation2"^^xsd:string)
+ClassAssertion(malont:NetworkInformation malont:NetworkInformation2)
+
+# Individual: malont:NetworkInformation3 (NetworkInformation3)
+
+AnnotationAssertion(rdfs:label malont:NetworkInformation3 "NetworkInformation3"^^xsd:string)
+ClassAssertion(malont:NetworkInformation malont:NetworkInformation3)
+
+# Individual: malont:NetworkInformation4 (NetworkInformation4)
+
+AnnotationAssertion(rdfs:label malont:NetworkInformation4 "NetworkInformation4"^^xsd:string)
+ClassAssertion(malont:NetworkInformation malont:NetworkInformation4)
+
+# Individual: malont:Obfuscation1 (Obfuscation1)
+
+AnnotationAssertion(rdfs:label malont:Obfuscation1 "Obfuscation1"^^xsd:string)
+ClassAssertion(malont:Obfuscation malont:Obfuscation1)
+
+# Individual: malont:Obfuscation2 (Obfuscation2)
+
+AnnotationAssertion(rdfs:label malont:Obfuscation2 "Obfuscation2"^^xsd:string)
+ClassAssertion(malont:Obfuscation malont:Obfuscation2)
+
+# Individual: malont:Obfuscation3 (Obfuscation3)
+
+AnnotationAssertion(rdfs:label malont:Obfuscation3 "Obfuscation3"^^xsd:string)
+ClassAssertion(malont:Obfuscation malont:Obfuscation3)
+
+# Individual: malont:Obfuscation4 (Obfuscation4)
+
+AnnotationAssertion(rdfs:label malont:Obfuscation4 "Obfuscation4"^^xsd:string)
+ClassAssertion(malont:Obfuscation malont:Obfuscation4)
+
+# Individual: malont:Organization1 (Organization1)
+
+AnnotationAssertion(rdfs:label malont:Organization1 "Organization1"^^xsd:string)
+ClassAssertion(malont:Organization malont:Organization1)
+ObjectPropertyAssertion(malont:hasProduct malont:Organization1 malont:Software1)
+
+# Individual: malont:Organization2 (Organization2)
+
+AnnotationAssertion(rdfs:label malont:Organization2 "Organization2"^^xsd:string)
+ClassAssertion(malont:Organization malont:Organization2)
+ObjectPropertyAssertion(malont:hasProduct malont:Organization2 malont:Software2)
+
+# Individual: malont:Organization3 (Organization3)
+
+AnnotationAssertion(rdfs:label malont:Organization3 "Organization3"^^xsd:string)
+ClassAssertion(malont:Organization malont:Organization3)
+ObjectPropertyAssertion(malont:hasProduct malont:Organization3 malont:Software3)
+
+# Individual: malont:Organization4 (Organization4)
+
+AnnotationAssertion(rdfs:label malont:Organization4 "Organization4"^^xsd:string)
+ClassAssertion(malont:Organization malont:Organization4)
+ObjectPropertyAssertion(malont:hasProduct malont:Organization4 malont:Software4)
+
+# Individual: malont:Password1 (Password1)
+
+AnnotationAssertion(rdfs:label malont:Password1 "Password1"^^xsd:string)
+ClassAssertion(malont:Password malont:Password1)
+
+# Individual: malont:Password2 (Password2)
+
+AnnotationAssertion(rdfs:label malont:Password2 "Password2"^^xsd:string)
+ClassAssertion(malont:Password malont:Password2)
+
+# Individual: malont:Password3 (Password3)
+
+AnnotationAssertion(rdfs:label malont:Password3 "Password3"^^xsd:string)
+ClassAssertion(malont:Password malont:Password3)
+
+# Individual: malont:Password4 (Password4)
+
+AnnotationAssertion(rdfs:label malont:Password4 "Password4"^^xsd:string)
+ClassAssertion(malont:Password malont:Password4)
+
+# Individual: malont:Payload1 (Payload1)
+
+AnnotationAssertion(rdfs:label malont:Payload1 "Payload1"^^xsd:string)
+ClassAssertion(malont:Payload malont:Payload1)
+
+# Individual: malont:Payload2 (Payload2)
+
+AnnotationAssertion(rdfs:label malont:Payload2 "Payload2"^^xsd:string)
+ClassAssertion(malont:Payload malont:Payload2)
+
+# Individual: malont:Payload3 (Payload3)
+
+AnnotationAssertion(rdfs:label malont:Payload3 "Payload3"^^xsd:string)
+ClassAssertion(malont:Payload malont:Payload3)
+
+# Individual: malont:Payload4 (Payload4)
+
+AnnotationAssertion(rdfs:label malont:Payload4 "Payload4"^^xsd:string)
+ClassAssertion(malont:Payload malont:Payload4)
+
+# Individual: malont:Person1 (Person1)
+
+AnnotationAssertion(rdfs:label malont:Person1 "Person1"^^xsd:string)
+ClassAssertion(malont:Person malont:Person1)
+
+# Individual: malont:Person2 (Person2)
+
+AnnotationAssertion(rdfs:label malont:Person2 "Person2"^^xsd:string)
+ClassAssertion(malont:Person malont:Person2)
+
+# Individual: malont:Person3 (Person3)
+
+AnnotationAssertion(rdfs:label malont:Person3 "Person3"^^xsd:string)
+ClassAssertion(malont:Person malont:Person3)
+ObjectPropertyAssertion(malont:hasType malont:Person3 malont:Person4)
+
+# Individual: malont:Person4 (Person4)
+
+AnnotationAssertion(rdfs:label malont:Person4 "Person4"^^xsd:string)
+ClassAssertion(malont:Person malont:Person4)
+
+# Individual: malont:PrintAction1 (PrintAction1)
+
+AnnotationAssertion(rdfs:label malont:PrintAction1 "PrintAction1"^^xsd:string)
+ClassAssertion(malont:PrintAction malont:PrintAction1)
+
+# Individual: malont:PrintAction2 (PrintAction2)
+
+AnnotationAssertion(rdfs:label malont:PrintAction2 "PrintAction2"^^xsd:string)
+ClassAssertion(malont:PrintAction malont:PrintAction2)
+
+# Individual: malont:PrintAction3 (PrintAction3)
+
+AnnotationAssertion(rdfs:label malont:PrintAction3 "PrintAction3"^^xsd:string)
+ClassAssertion(malont:PrintAction malont:PrintAction3)
+
+# Individual: malont:PrintAction4 (PrintAction4)
+
+AnnotationAssertion(rdfs:label malont:PrintAction4 "PrintAction4"^^xsd:string)
+ClassAssertion(malont:PrintAction malont:PrintAction4)
+
+# Individual: malont:Region1 (Region1)
+
+AnnotationAssertion(rdfs:label malont:Region1 "Region1"^^xsd:string)
+ClassAssertion(malont:Region malont:Region1)
+
+# Individual: malont:Region2 (Region2)
+
+AnnotationAssertion(rdfs:label malont:Region2 "Region2"^^xsd:string)
+ClassAssertion(malont:Region malont:Region2)
+
+# Individual: malont:Region3 (Region3)
+
+AnnotationAssertion(rdfs:label malont:Region3 "Region3"^^xsd:string)
+ClassAssertion(malont:Region malont:Region3)
+
+# Individual: malont:Region4 (Region4)
+
+AnnotationAssertion(rdfs:label malont:Region4 "Region4"^^xsd:string)
+ClassAssertion(malont:Region malont:Region4)
+
+# Individual: malont:SHA-1_1 (SHA-1_1)
+
+AnnotationAssertion(rdfs:label malont:SHA-1_1 "SHA-1_1"^^xsd:string)
+ClassAssertion(malont:SHA-1 malont:SHA-1_1)
+
+# Individual: malont:SHA-1_2 (SHA-1_2)
+
+AnnotationAssertion(rdfs:label malont:SHA-1_2 "SHA-1_2"^^xsd:string)
+ClassAssertion(malont:SHA-1 malont:SHA-1_2)
+
+# Individual: malont:SHA-1_3 (SHA-1_3)
+
+AnnotationAssertion(rdfs:label malont:SHA-1_3 "SHA-1_3"^^xsd:string)
+ClassAssertion(malont:SHA-1 malont:SHA-1_3)
+
+# Individual: malont:SHA-1_4 (SHA-1_4)
+
+AnnotationAssertion(rdfs:label malont:SHA-1_4 "SHA-1_4"^^xsd:string)
+ClassAssertion(malont:SHA-1 malont:SHA-1_4)
+
+# Individual: malont:SHA-256_1 (SHA-256_1)
+
+AnnotationAssertion(rdfs:label malont:SHA-256_1 "SHA-256_1"^^xsd:string)
+ClassAssertion(malont:SHA-256 malont:SHA-256_1)
+
+# Individual: malont:SHA-256_2 (SHA-256_2)
+
+AnnotationAssertion(rdfs:label malont:SHA-256_2 "SHA-256_2"^^xsd:string)
+ClassAssertion(malont:SHA-256 malont:SHA-256_2)
+
+# Individual: malont:SHA-256_3 (SHA-256_3)
+
+AnnotationAssertion(rdfs:label malont:SHA-256_3 "SHA-256_3"^^xsd:string)
+ClassAssertion(malont:SHA-256 malont:SHA-256_3)
+
+# Individual: malont:SHA-256_4 (SHA-256_4)
+
+AnnotationAssertion(rdfs:label malont:SHA-256_4 "SHA-256_4"^^xsd:string)
+ClassAssertion(malont:SHA-256 malont:SHA-256_4)
+
+# Individual: malont:SSDeep1 (SSDeep1)
+
+AnnotationAssertion(rdfs:label malont:SSDeep1 "SSDeep1"^^xsd:string)
+ClassAssertion(malont:SSDeep malont:SSDeep1)
+
+# Individual: malont:SSDeep2 (SSDeep2)
+
+AnnotationAssertion(rdfs:label malont:SSDeep2 "SSDeep2"^^xsd:string)
+ClassAssertion(malont:SSDeep malont:SSDeep2)
+
+# Individual: malont:SSDeep3 (SSDeep3)
+
+AnnotationAssertion(rdfs:label malont:SSDeep3 "SSDeep3"^^xsd:string)
+ClassAssertion(malont:SSDeep malont:SSDeep3)
+
+# Individual: malont:SSDeep4 (SSDeep4)
+
+AnnotationAssertion(rdfs:label malont:SSDeep4 "SSDeep4"^^xsd:string)
+ClassAssertion(malont:SSDeep malont:SSDeep4)
+
+# Individual: malont:SearchAction1 (SearchAction1)
+
+AnnotationAssertion(rdfs:label malont:SearchAction1 "SearchAction1"^^xsd:string)
+ClassAssertion(malont:SearchAction malont:SearchAction1)
+
+# Individual: malont:SearchAction2 (SearchAction2)
+
+AnnotationAssertion(rdfs:label malont:SearchAction2 "SearchAction2"^^xsd:string)
+ClassAssertion(malont:SearchAction malont:SearchAction2)
+
+# Individual: malont:SearchAction3 (SearchAction3)
+
+AnnotationAssertion(rdfs:label malont:SearchAction3 "SearchAction3"^^xsd:string)
+ClassAssertion(malont:SearchAction malont:SearchAction3)
+
+# Individual: malont:SearchAction4 (SearchAction4)
+
+AnnotationAssertion(rdfs:label malont:SearchAction4 "SearchAction4"^^xsd:string)
+ClassAssertion(malont:SearchAction malont:SearchAction4)
+
+# Individual: malont:SocialSecurityNumber1 (SocialSecurityNumber1)
+
+AnnotationAssertion(rdfs:label malont:SocialSecurityNumber1 "SocialSecurityNumber1"^^xsd:string)
+ClassAssertion(malont:SocialSecurityNumber malont:SocialSecurityNumber1)
+
+# Individual: malont:SocialSecurityNumber2 (SocialSecurityNumber2)
+
+AnnotationAssertion(rdfs:label malont:SocialSecurityNumber2 "SocialSecurityNumber2"^^xsd:string)
+ClassAssertion(malont:SocialSecurityNumber malont:SocialSecurityNumber2)
+
+# Individual: malont:SocialSecurityNumber3 (SocialSecurityNumber3)
+
+AnnotationAssertion(rdfs:label malont:SocialSecurityNumber3 "SocialSecurityNumber3"^^xsd:string)
+ClassAssertion(malont:SocialSecurityNumber malont:SocialSecurityNumber3)
+
+# Individual: malont:SocialSecurityNumber4 (SocialSecurityNumber4)
+
+AnnotationAssertion(rdfs:label malont:SocialSecurityNumber4 "SocialSecurityNumber4"^^xsd:string)
+ClassAssertion(malont:SocialSecurityNumber malont:SocialSecurityNumber4)
+
+# Individual: malont:Software1 (Software1)
+
+AnnotationAssertion(rdfs:label malont:Software1 "Software1"^^xsd:string)
+ClassAssertion(malont:Software malont:Software1)
+ObjectPropertyAssertion(malont:hasProduct malont:Software1 malont:Software1)
+ObjectPropertyAssertion(malont:hasVulnerability malont:Software1 malont:Vulnerability1)
+DataPropertyAssertion(malont:hasReleaseYear malont:Software1 "releaseYear1"^^xsd:string)
+DataPropertyAssertion(malont:hasVersion malont:Software1 "version1"^^xsd:string)
+
+# Individual: malont:Software2 (Software2)
+
+AnnotationAssertion(rdfs:label malont:Software2 "Software2"^^xsd:string)
+ClassAssertion(malont:Software malont:Software2)
+ObjectPropertyAssertion(malont:hasProduct malont:Software2 malont:Software2)
+ObjectPropertyAssertion(malont:hasVulnerability malont:Software2 malont:Vulnerability2)
+DataPropertyAssertion(malont:hasReleaseYear malont:Software2 "releaseYear2"^^xsd:string)
+DataPropertyAssertion(malont:hasVersion malont:Software2 "version2"^^xsd:string)
+
+# Individual: malont:Software3 (Software3)
+
+AnnotationAssertion(rdfs:label malont:Software3 "Software3"^^xsd:string)
+ClassAssertion(malont:Software malont:Software3)
+ObjectPropertyAssertion(malont:hasProduct malont:Software3 malont:Software3)
+ObjectPropertyAssertion(malont:hasVulnerability malont:Software3 malont:Vulnerability3)
+DataPropertyAssertion(malont:hasReleaseYear malont:Software3 "releaseYear3"^^xsd:string)
+DataPropertyAssertion(malont:hasVersion malont:Software3 "version3"^^xsd:string)
+
+# Individual: malont:Software4 (Software4)
+
+AnnotationAssertion(rdfs:label malont:Software4 "Software4"^^xsd:string)
+ClassAssertion(malont:Software malont:Software4)
+ObjectPropertyAssertion(malont:hasProduct malont:Software4 malont:Software4)
+ObjectPropertyAssertion(malont:hasVulnerability malont:Software4 malont:Vulnerability4)
+DataPropertyAssertion(malont:hasReleaseYear malont:Software4 "releaseYear4"^^xsd:string)
+DataPropertyAssertion(malont:hasVersion malont:Software4 "version4"^^xsd:string)
+
+# Individual: malont:SourceCodeInformation1 (SourceCodeInformation1)
+
+AnnotationAssertion(rdfs:label malont:SourceCodeInformation1 "SourceCodeInformation1"^^xsd:string)
+ClassAssertion(malont:SourceCodeInformation malont:SourceCodeInformation1)
+
+# Individual: malont:SourceCodeInformation2 (SourceCodeInformation2)
+
+AnnotationAssertion(rdfs:label malont:SourceCodeInformation2 "SourceCodeInformation2"^^xsd:string)
+ClassAssertion(malont:SourceCodeInformation malont:SourceCodeInformation2)
+
+# Individual: malont:SourceCodeInformation3 (SourceCodeInformation3)
+
+AnnotationAssertion(rdfs:label malont:SourceCodeInformation3 "SourceCodeInformation3"^^xsd:string)
+ClassAssertion(malont:SourceCodeInformation malont:SourceCodeInformation3)
+
+# Individual: malont:SourceCodeInformation4 (SourceCodeInformation4)
+
+AnnotationAssertion(rdfs:label malont:SourceCodeInformation4 "SourceCodeInformation4"^^xsd:string)
+ClassAssertion(malont:SourceCodeInformation malont:SourceCodeInformation4)
+
+# Individual: malont:System1 (System1)
+
+AnnotationAssertion(rdfs:label malont:System1 "System1"^^xsd:string)
+ClassAssertion(malont:System malont:System1)
+
+# Individual: malont:System2 (System2)
+
+AnnotationAssertion(rdfs:label malont:System2 "System2"^^xsd:string)
+ClassAssertion(malont:System malont:System2)
+
+# Individual: malont:System3 (System3)
+
+AnnotationAssertion(rdfs:label malont:System3 "System3"^^xsd:string)
+ClassAssertion(malont:System malont:System3)
+
+# Individual: malont:System4 (System4)
+
+AnnotationAssertion(rdfs:label malont:System4 "System4"^^xsd:string)
+ClassAssertion(malont:System malont:System4)
+
+# Individual: malont:SystemConfigurationInformation1 (SystemConfigurationInformation1)
+
+AnnotationAssertion(rdfs:label malont:SystemConfigurationInformation1 "SystemConfigurationInformation1"^^xsd:string)
+ClassAssertion(malont:SystemConfigurationInformation malont:SystemConfigurationInformation1)
+
+# Individual: malont:SystemConfigurationInformation2 (SystemConfigurationInformation2)
+
+AnnotationAssertion(rdfs:label malont:SystemConfigurationInformation2 "SystemConfigurationInformation2"^^xsd:string)
+ClassAssertion(malont:SystemConfigurationInformation malont:SystemConfigurationInformation2)
+
+# Individual: malont:SystemConfigurationInformation3 (SystemConfigurationInformation3)
+
+AnnotationAssertion(rdfs:label malont:SystemConfigurationInformation3 "SystemConfigurationInformation3"^^xsd:string)
+ClassAssertion(malont:SystemConfigurationInformation malont:SystemConfigurationInformation3)
+
+# Individual: malont:SystemConfigurationInformation4 (SystemConfigurationInformation4)
+
+AnnotationAssertion(rdfs:label malont:SystemConfigurationInformation4 "SystemConfigurationInformation4"^^xsd:string)
+ClassAssertion(malont:SystemConfigurationInformation malont:SystemConfigurationInformation4)
+
+# Individual: malont:SystemConfigurationInformation5 (SystemConfigurationInformation5)
+
+AnnotationAssertion(rdfs:label malont:SystemConfigurationInformation5 "SystemConfigurationInformation5"^^xsd:string)
+ClassAssertion(malont:SystemConfigurationInformation malont:SystemConfigurationInformation5)
+
+# Individual: malont:SystemInformation1 (SystemInformation1)
+
+AnnotationAssertion(rdfs:label malont:SystemInformation1 "SystemInformation1"^^xsd:string)
+ClassAssertion(malont:SystemInformation malont:SystemInformation1)
+
+# Individual: malont:SystemInformation2 (SystemInformation2)
+
+AnnotationAssertion(rdfs:label malont:SystemInformation2 "SystemInformation2"^^xsd:string)
+ClassAssertion(malont:SystemInformation malont:SystemInformation2)
+
+# Individual: malont:SystemInformation3 (SystemInformation3)
+
+AnnotationAssertion(rdfs:label malont:SystemInformation3 "SystemInformation3"^^xsd:string)
+ClassAssertion(malont:SystemInformation malont:SystemInformation3)
+
+# Individual: malont:SystemInformation4 (SystemInformation4)
+
+AnnotationAssertion(rdfs:label malont:SystemInformation4 "SystemInformation4"^^xsd:string)
+ClassAssertion(malont:SystemInformation malont:SystemInformation4)
+
+# Individual: malont:TechnologyInformation1 (TechnologyInformation1)
+
+AnnotationAssertion(rdfs:label malont:TechnologyInformation1 "TechnologyInformation1"^^xsd:string)
+ClassAssertion(malont:TechnologyInformation malont:TechnologyInformation1)
+
+# Individual: malont:TechnologyInformation2 (TechnologyInformation2)
+
+AnnotationAssertion(rdfs:label malont:TechnologyInformation2 "TechnologyInformation2"^^xsd:string)
+ClassAssertion(malont:TechnologyInformation malont:TechnologyInformation2)
+
+# Individual: malont:TechnologyInformation3 (TechnologyInformation3)
+
+AnnotationAssertion(rdfs:label malont:TechnologyInformation3 "TechnologyInformation3"^^xsd:string)
+ClassAssertion(malont:TechnologyInformation malont:TechnologyInformation3)
+
+# Individual: malont:TechnologyInformation4 (TechnologyInformation4)
+
+AnnotationAssertion(rdfs:label malont:TechnologyInformation4 "TechnologyInformation4"^^xsd:string)
+ClassAssertion(malont:TechnologyInformation malont:TechnologyInformation4)
+
+# Individual: malont:Time1 (Time1)
+
+AnnotationAssertion(rdfs:label malont:Time1 "Time1"^^xsd:string)
+ClassAssertion(malont:Time malont:Time1)
+
+# Individual: malont:Time2 (Time2)
+
+AnnotationAssertion(rdfs:label malont:Time2 "Time2"^^xsd:string)
+ClassAssertion(malont:Time malont:Time2)
+
+# Individual: malont:Time3 (Time3)
+
+AnnotationAssertion(rdfs:label malont:Time3 "Time3"^^xsd:string)
+ClassAssertion(malont:Time malont:Time3)
+
+# Individual: malont:Time4 (Time4)
+
+AnnotationAssertion(rdfs:label malont:Time4 "Time4"^^xsd:string)
+ClassAssertion(malont:Time malont:Time4)
+
+# Individual: malont:TrojanHorse1 (TrojanHorse1)
+
+AnnotationAssertion(rdfs:label malont:TrojanHorse1 "TrojanHorse1"^^xsd:string)
+ClassAssertion(malont:TrojanHorse malont:TrojanHorse1)
+
+# Individual: malont:TrojanHorse2 (TrojanHorse2)
+
+AnnotationAssertion(rdfs:label malont:TrojanHorse2 "TrojanHorse2"^^xsd:string)
+ClassAssertion(malont:TrojanHorse malont:TrojanHorse2)
+
+# Individual: malont:TrojanHorse3 (TrojanHorse3)
+
+AnnotationAssertion(rdfs:label malont:TrojanHorse3 "TrojanHorse3"^^xsd:string)
+ClassAssertion(malont:TrojanHorse malont:TrojanHorse3)
+
+# Individual: malont:TrojanHorse4 (TrojanHorse4)
+
+AnnotationAssertion(rdfs:label malont:TrojanHorse4 "TrojanHorse4"^^xsd:string)
+ClassAssertion(malont:TrojanHorse malont:TrojanHorse4)
+
+# Individual: malont:UniquelyIdentifiableInformation1 (UniquelyIdentifiableInformation1)
+
+AnnotationAssertion(rdfs:label malont:UniquelyIdentifiableInformation1 "UniquelyIdentifiableInformation1"^^xsd:string)
+ClassAssertion(malont:UniquelyIdentifiableInformation malont:UniquelyIdentifiableInformation1)
+
+# Individual: malont:UniquelyIdentifiableInformation2 (UniquelyIdentifiableInformation2)
+
+AnnotationAssertion(rdfs:label malont:UniquelyIdentifiableInformation2 "UniquelyIdentifiableInformation2"^^xsd:string)
+ClassAssertion(malont:UniquelyIdentifiableInformation malont:UniquelyIdentifiableInformation2)
+
+# Individual: malont:UniquelyIdentifiableInformation3 (UniquelyIdentifiableInformation3)
+
+AnnotationAssertion(rdfs:label malont:UniquelyIdentifiableInformation3 "UniquelyIdentifiableInformation3"^^xsd:string)
+ClassAssertion(malont:UniquelyIdentifiableInformation malont:UniquelyIdentifiableInformation3)
+
+# Individual: malont:UniquelyIdentifiableInformation4 (UniquelyIdentifiableInformation4)
+
+AnnotationAssertion(rdfs:label malont:UniquelyIdentifiableInformation4 "UniquelyIdentifiableInformation4"^^xsd:string)
+ClassAssertion(malont:UniquelyIdentifiableInformation malont:UniquelyIdentifiableInformation4)
+
+# Individual: malont:User1 (User1)
+
+AnnotationAssertion(rdfs:label malont:User1 "User1"^^xsd:string)
+ClassAssertion(malont:User malont:User1)
+ObjectPropertyAssertion(malont:hasAccount malont:User1 malont:Account1)
+
+# Individual: malont:User2 (User2)
+
+AnnotationAssertion(rdfs:label malont:User2 "User2"^^xsd:string)
+ClassAssertion(malont:User malont:User2)
+ObjectPropertyAssertion(malont:hasAccount malont:User2 malont:Account2)
+
+# Individual: malont:User3 (User3)
+
+AnnotationAssertion(rdfs:label malont:User3 "User3"^^xsd:string)
+ClassAssertion(malont:User malont:User3)
+ObjectPropertyAssertion(malont:hasAccount malont:User3 malont:Account3)
+
+# Individual: malont:User4 (User4)
+
+AnnotationAssertion(rdfs:label malont:User4 "User4"^^xsd:string)
+ClassAssertion(malont:User malont:User4)
+ObjectPropertyAssertion(malont:hasAccount malont:User4 malont:Account4)
+
+# Individual: malont:UserName1 (UserName1)
+
+AnnotationAssertion(rdfs:label malont:UserName1 "UserName1"^^xsd:string)
+ClassAssertion(malont:UserName malont:UserName1)
+
+# Individual: malont:UserName2 (UserName2)
+
+AnnotationAssertion(rdfs:label malont:UserName2 "UserName2"^^xsd:string)
+ClassAssertion(malont:UserName malont:UserName2)
+
+# Individual: malont:UserName3 (UserName3)
+
+AnnotationAssertion(rdfs:label malont:UserName3 "UserName3"^^xsd:string)
+ClassAssertion(malont:UserName malont:UserName3)
+
+# Individual: malont:UserName4 (UserName4)
+
+AnnotationAssertion(rdfs:label malont:UserName4 "UserName4"^^xsd:string)
+ClassAssertion(malont:UserName malont:UserName4)
+
+# Individual: malont:Vector1 (Vector1)
+
+AnnotationAssertion(rdfs:label malont:Vector1 "Vector1"^^xsd:string)
+ClassAssertion(malont:Vector malont:Vector1)
+
+# Individual: malont:Vector2 (Vector2)
+
+AnnotationAssertion(rdfs:label malont:Vector2 "Vector2"^^xsd:string)
+ClassAssertion(malont:Vector malont:Vector2)
+
+# Individual: malont:Vector3 (Vector3)
+
+AnnotationAssertion(rdfs:label malont:Vector3 "Vector3"^^xsd:string)
+ClassAssertion(malont:Vector malont:Vector3)
+
+# Individual: malont:Vector4 (Vector4)
+
+AnnotationAssertion(rdfs:label malont:Vector4 "Vector4"^^xsd:string)
+ClassAssertion(malont:Vector malont:Vector4)
+
+# Individual: malont:Vulnerability1 (Vulnerability1)
+
+AnnotationAssertion(rdfs:label malont:Vulnerability1 "Vulnerability1"^^xsd:string)
+ClassAssertion(malont:Vulnerability malont:Vulnerability1)
+
+# Individual: malont:Vulnerability2 (Vulnerability2)
+
+AnnotationAssertion(rdfs:label malont:Vulnerability2 "Vulnerability2"^^xsd:string)
+ClassAssertion(malont:Vulnerability malont:Vulnerability2)
+
+# Individual: malont:Vulnerability3 (Vulnerability3)
+
+AnnotationAssertion(rdfs:label malont:Vulnerability3 "Vulnerability3"^^xsd:string)
+ClassAssertion(malont:Vulnerability malont:Vulnerability3)
+ObjectPropertyAssertion(malont:exploits malont:Vulnerability3 malont:Vulnerability4)
+
+# Individual: malont:Vulnerability4 (Vulnerability4)
+
+AnnotationAssertion(rdfs:label malont:Vulnerability4 "Vulnerability4"^^xsd:string)
+ClassAssertion(malont:Vulnerability malont:Vulnerability4)
+
+# Individual: malont:vHash1 (vHash1)
+
+AnnotationAssertion(rdfs:label malont:vHash1 "vHash1"^^xsd:string)
+ClassAssertion(malont:vHash malont:vHash1)
+
+# Individual: malont:vHash2 (vHash2)
+
+AnnotationAssertion(rdfs:label malont:vHash2 "vHash2"^^xsd:string)
+ClassAssertion(malont:vHash malont:vHash2)
+
+# Individual: malont:vHash3 (vHash3)
+
+AnnotationAssertion(rdfs:label malont:vHash3 "vHash3"^^xsd:string)
+ClassAssertion(malont:vHash malont:vHash3)
+
+# Individual: malont:vHash4 (vHash4)
+
+AnnotationAssertion(rdfs:label malont:vHash4 "vHash4"^^xsd:string)
+ClassAssertion(malont:vHash malont:vHash4)
+
+
+ClassAssertion(malont:Organization _:genid2)
+ClassAssertion(malont:Person _:genid2)
+AnnotationAssertion(rdfs:label untitled-ontology-15:Campaign "Campaign")
+AnnotationAssertion(rdfs:label untitled-ontology-15:Organization "Organization")
+AnnotationAssertion(rdfs:label untitled-ontology-15:Person "Person")
+AnnotationAssertion(rdfs:label _:genid6 _:genid5)
+)
