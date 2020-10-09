@@ -1,0 +1,3740 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://idea.rpi.edu/malont#"
+     xml:base="http://idea.rpi.edu/malont"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:malont="http://idea.rpi.edu/malont#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-15#"
+     xmlns:untitled-ontology-16="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#">
+    <owl:Ontology rdf:about="http://idea.rpi.edu/malont"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://idea.rpi.edu/malont#accessInformation -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#accessInformation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#AttackerGroup"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label>accessInformation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#authored -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#authored">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:label>authored</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#belongsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#AttackerGroup"/>
+        <rdfs:label>belongsTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#connectsTo -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#connectsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Account"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Host"/>
+        <rdfs:label>connectsTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#exploits -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#exploits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
+        <rdfs:label>exploits</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasAccount -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasAccount">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#User"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Account"/>
+        <rdfs:label>hasAccount</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasAttachment -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasAttachment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#File"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasAttackerLocation -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasAttackerLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Location"/>
+        <rdfs:label>hasAttackerLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasAttackerTime -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasAttackerTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Time"/>
+        <rdfs:label>hasAttackerTime</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:label>hasAuthor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasCharacteristics -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasCharacteristics">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics"/>
+        <rdfs:label>hasCharacteristics</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasFamily -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasFamily">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
+        <rdfs:label>hasFamily</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasInformation -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasInformation">
+        <owl:inverseOf rdf:resource="http://idea.rpi.edu/malont#isInformationOf"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Information"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasMember">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:label>hasMember</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasProduct">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <rdfs:label>hasProduct</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Person"/>
+        <rdfs:label>hasType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasVulnerability -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasVulnerability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
+        <rdfs:label>hasVulnerability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#indicatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#indicatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <rdfs:label>indicatedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#indicates -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#indicates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:label>indicates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#involvesMalware -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#involvesMalware">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:label>involvesMalware</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#isInformationOf -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#isInformationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#logsInFrom -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#logsInFrom">
+        <rdfs:subPropertyOf rdf:resource="http://idea.rpi.edu/malont#connectsTo"/>
+        <rdfs:label>logsInFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#logsInto -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#logsInto">
+        <rdfs:subPropertyOf rdf:resource="http://idea.rpi.edu/malont#connectsTo"/>
+        <rdfs:label>logsInto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#runsSoftware -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#runsSoftware">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Host"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <rdfs:label>runsSoftware</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#similarTo -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#similarTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>similarTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#usesAddress -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#usesAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Host"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Address"/>
+        <rdfs:label>usesAddress</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#usesDropper -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#usesDropper">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
+        <rdfs:label>usesDropper</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#usesHost -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#usesHost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Host"/>
+        <rdfs:label>usesHost</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#usesMalware -->
+
+    <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#usesMalware">
+        <rdfs:subPropertyOf rdf:resource="http://idea.rpi.edu/malont#involvesMalware"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:label>usesMalware</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-15#targets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-15#targets">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject"/>
+        <rdfs:label>targets</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasEmailAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasEmailAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasEmailAddress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasFileExtension -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasFileExtension">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasFileExtension</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasFileName -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasFileName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasFileName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasFilePath -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasFilePath">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasFilePath</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasFileSize -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasFileSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasFileSize</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasFileType -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasFileType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasFileType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasIP -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasIP">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasIP</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasPort -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasPort">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasPort</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasReleaseYear -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasReleaseYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasReleaseYear</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasURL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasURL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#hasVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasVersion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasVersion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#hasEmailSubject -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#hasEmailSubject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasEmailSubject</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AccessAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#AccessAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label>AccessAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Account -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Account">
+        <rdfs:label>Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#SystemInformation"/>
+        <rdfs:label>AccountAuthenticationInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Action -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Action">
+        <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ActionModifier -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#ActionModifier">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Action"/>
+        <rdfs:label>ActionModifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Address -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Address">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <rdfs:label>Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Attacker -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Attacker">
+        <rdfs:label>Attacker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AttackerGroup -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#AttackerGroup">
+        <rdfs:label>AttackerGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AuthenticationHash -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#AuthenticationHash">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+        <rdfs:label>AuthenticationHash</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#BusinessInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#BusinessInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label>BusinessInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Campaign -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Campaign">
+        <rdfs:label>Campaign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CopyAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#CopyAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label>CopyAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Country -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Country">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Region"/>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CourseOfAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#CourseOfAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Action"/>
+        <rdfs:label>CourseOfAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DataSource -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#DataSource">
+        <rdfs:label>DataSource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DigitalAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#DigitalAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Action"/>
+        <rdfs:label>DigitalAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DriversLicenseNumber -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation"/>
+        <rdfs:label>DriversLicenseNumber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Dropper -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Dropper">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:label>Dropper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#EmailAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#EmailAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label>EmailAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Event -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Event">
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Exploit -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Exploit">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:label>Exploit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ExploitTargetObject -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject">
+        <rdfs:comment>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
+                <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
+            </rdf:Description>
+        </rdfs:comment>
+        <rdfs:label>ExploitTargetObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#File -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#File">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <rdfs:label>File</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#FinancialInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label>FinancialInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialTransactionAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Action"/>
+        <rdfs:label>FinancialTransactionAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#GeneralVirus -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#GeneralVirus">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:label>GeneralVirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Hash -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Hash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <rdfs:label>Hash</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Host -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Host">
+        <rdfs:label>Host</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Information -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Information">
+        <rdfs:label>Information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#InstallAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#InstallAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label>InstallAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Locality -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Locality">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Country"/>
+        <rdfs:label>Locality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Location -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Location">
+        <rdfs:label>Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MD5 -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#MD5">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+        <rdfs:label>MD5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Malware -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Malware">
+        <rdfs:label>Malware</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareCharacteristics -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics">
+        <rdfs:label>MalwareCharacteristics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareFamily -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#MalwareFamily">
+        <rdfs:label>MalwareFamily</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MedicalInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#MedicalInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label>MedicalInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ModificationAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#ModificationAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label>ModificationAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#NetworkInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#NetworkInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#TechnologyInformation"/>
+        <rdfs:label>NetworkInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Obfuscation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Obfuscation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics"/>
+        <rdfs:label>Obfuscation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Organization -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Organization">
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Password -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Password">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#AccountAuthenticationInformation"/>
+        <rdfs:label>Password</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Payload -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Payload">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics"/>
+        <rdfs:label>Payload</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Person -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Person">
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#PrintAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#PrintAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label>PrintAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Region -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Region">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Location"/>
+        <rdfs:label>Region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SHA">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-1 -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SHA-1">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#SHA"/>
+        <rdfs:label>SHA-1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-256 -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SHA-256">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#SHA"/>
+        <rdfs:label>SHA-256</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SSDeep -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SSDeep">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+        <rdfs:label>SSDeep</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SearchAction -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SearchAction">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label>SearchAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SocialSecurityNumber -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation"/>
+        <rdfs:label>SocialSecurityNumber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Software -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Software">
+        <rdfs:label>Software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SourceCodeInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#TechnologyInformation"/>
+        <rdfs:label>SourceCodeInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#System -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#System">
+        <rdfs:label>System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#SystemInformation"/>
+        <rdfs:label>SystemConfigurationInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#SystemInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#TechnologyInformation"/>
+        <rdfs:label>SystemInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TechnologyInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#TechnologyInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label>TechnologyInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Time -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Time">
+        <rdfs:label>Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TrojanHorse -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#TrojanHorse">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <rdfs:label>TrojanHorse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label>UniquelyIdentifiableInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#User -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#User">
+        <rdfs:label>User</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UserName -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#UserName">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#AccountAuthenticationInformation"/>
+        <rdfs:label>UserName</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vector -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Vector">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics"/>
+        <rdfs:label>Vector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vulnerability -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#Vulnerability">
+        <rdfs:label>Vulnerability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#vHash -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/malont#vHash">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+        <rdfs:label>vHash</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <rdfs:label>Email</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator">
+        <rdfs:label>Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Account1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Account1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Account"/>
+        <connectsTo rdf:resource="http://idea.rpi.edu/malont#Host1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Account2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Account2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Account"/>
+        <connectsTo rdf:resource="http://idea.rpi.edu/malont#Host2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Account3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Account3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Account"/>
+        <connectsTo rdf:resource="http://idea.rpi.edu/malont#Host3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Account4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Account4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Account"/>
+        <connectsTo rdf:resource="http://idea.rpi.edu/malont#Host4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AccountAuthenticationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccountAuthenticationInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AccountAuthenticationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccountAuthenticationInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AccountAuthenticationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccountAuthenticationInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AccountAuthenticationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccountAuthenticationInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Action1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Action1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Action"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Action2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Action2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Action"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Action3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Action3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Action"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Action4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Action4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Action"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ActionModifier1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ActionModifier1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ActionModifier"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionModifier1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ActionModifier2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ActionModifier2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ActionModifier"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionModifier2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ActionModifier3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ActionModifier3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ActionModifier"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionModifier3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ActionModifier4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ActionModifier4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ActionModifier"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionModifier4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Address1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Address1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Address"/>
+        <hasIP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP1</hasIP>
+        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port1</hasPort>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL1</hasURL>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Address2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Address2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Address"/>
+        <hasIP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP2</hasIP>
+        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port2</hasPort>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL2</hasURL>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Address3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Address3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Address"/>
+        <hasIP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP3</hasIP>
+        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port3</hasPort>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL3</hasURL>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Address4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Address4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Address"/>
+        <hasIP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP4</hasIP>
+        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port4</hasPort>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL4</hasURL>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Attacker1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Attacker1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <authored rdf:resource="http://idea.rpi.edu/malont#Malware1"/>
+        <belongsTo rdf:resource="http://idea.rpi.edu/malont#AttackerGroup1"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location1"/>
+        <hasAttackerTime rdf:resource="http://idea.rpi.edu/malont#Time1"/>
+        <hasType rdf:resource="http://idea.rpi.edu/malont#Organization1"/>
+        <involvesMalware rdf:resource="http://idea.rpi.edu/malont#Malware1"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address1"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper1"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host1"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attacker1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Attacker2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Attacker2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <authored rdf:resource="http://idea.rpi.edu/malont#Malware2"/>
+        <belongsTo rdf:resource="http://idea.rpi.edu/malont#AttackerGroup2"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location2"/>
+        <hasAttackerTime rdf:resource="http://idea.rpi.edu/malont#Time2"/>
+        <hasType rdf:resource="http://idea.rpi.edu/malont#Organization2"/>
+        <involvesMalware rdf:resource="http://idea.rpi.edu/malont#Malware2"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address2"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper2"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host2"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attacker2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Attacker3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Attacker3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <authored rdf:resource="http://idea.rpi.edu/malont#Malware3"/>
+        <belongsTo rdf:resource="http://idea.rpi.edu/malont#AttackerGroup3"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location3"/>
+        <hasAttackerTime rdf:resource="http://idea.rpi.edu/malont#Time3"/>
+        <hasType rdf:resource="http://idea.rpi.edu/malont#Organization3"/>
+        <involvesMalware rdf:resource="http://idea.rpi.edu/malont#Malware3"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address3"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper3"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host3"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attacker3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Attacker4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Attacker4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Attacker"/>
+        <authored rdf:resource="http://idea.rpi.edu/malont#Malware4"/>
+        <belongsTo rdf:resource="http://idea.rpi.edu/malont#AttackerGroup4"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location4"/>
+        <hasAttackerTime rdf:resource="http://idea.rpi.edu/malont#Time4"/>
+        <hasType rdf:resource="http://idea.rpi.edu/malont#Organization4"/>
+        <involvesMalware rdf:resource="http://idea.rpi.edu/malont#Malware4"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address4"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper4"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host4"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attacker4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AttackerGroup1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AttackerGroup1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AttackerGroup"/>
+        <accessInformation rdf:resource="http://idea.rpi.edu/malont#FinancialInformation1"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackerGroup1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AttackerGroup2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AttackerGroup2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AttackerGroup"/>
+        <accessInformation rdf:resource="http://idea.rpi.edu/malont#FinancialInformation2"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackerGroup2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AttackerGroup3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AttackerGroup3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AttackerGroup"/>
+        <accessInformation rdf:resource="http://idea.rpi.edu/malont#Information1"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackerGroup3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AttackerGroup4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AttackerGroup4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AttackerGroup"/>
+        <accessInformation rdf:resource="http://idea.rpi.edu/malont#FinancialInformation1"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackerGroup4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AuthenticationHash1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AuthenticationHash1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AuthenticationHash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuthenticationHash1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AuthenticationHash2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AuthenticationHash2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AuthenticationHash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuthenticationHash2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AuthenticationHash3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AuthenticationHash3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AuthenticationHash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuthenticationHash3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#AuthenticationHash4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AuthenticationHash4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#AuthenticationHash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuthenticationHash4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#BusinessInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#BusinessInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#BusinessInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BusinessInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#BusinessInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#BusinessInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#BusinessInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BusinessInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#BusinessInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#BusinessInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#BusinessInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BusinessInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#BusinessInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#BusinessInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#BusinessInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BusinessInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Campaign1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Campaign1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability1"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location1"/>
+        <hasAttackerTime rdf:resource="http://idea.rpi.edu/malont#Time1"/>
+        <involvesMalware rdf:resource="http://idea.rpi.edu/malont#Malware1"/>
+        <similarTo rdf:resource="http://idea.rpi.edu/malont#Campaign1"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper1"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host1"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Campaign2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Campaign2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability2"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location2"/>
+        <hasAttackerTime rdf:resource="http://idea.rpi.edu/malont#Time2"/>
+        <involvesMalware rdf:resource="http://idea.rpi.edu/malont#Malware2"/>
+        <similarTo rdf:resource="http://idea.rpi.edu/malont#Campaign2"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper2"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host2"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Campaign3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Campaign3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability3"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location3"/>
+        <hasAttackerTime rdf:resource="http://idea.rpi.edu/malont#Time3"/>
+        <involvesMalware rdf:resource="http://idea.rpi.edu/malont#Malware3"/>
+        <similarTo rdf:resource="http://idea.rpi.edu/malont#Campaign3"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper3"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host3"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Campaign4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Campaign4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location4"/>
+        <hasAttackerTime rdf:resource="http://idea.rpi.edu/malont#Time4"/>
+        <involvesMalware rdf:resource="http://idea.rpi.edu/malont#Malware4"/>
+        <similarTo rdf:resource="http://idea.rpi.edu/malont#Campaign4"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper4"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host4"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CopyAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CopyAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#CopyAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CopyAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CopyAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#CopyAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CopyAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CopyAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#CopyAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CopyAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CopyAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#CopyAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Country1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Country1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Country"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Country2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Country2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Country"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Country3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Country3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Country"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Country4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Country4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Country"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CourseOfAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CourseOfAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#CourseOfAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CourseOfAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CourseOfAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CourseOfAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#CourseOfAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CourseOfAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CourseOfAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CourseOfAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#CourseOfAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CourseOfAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#CourseOfAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CourseOfAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#CourseOfAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CourseOfAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DataSource1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DataSource1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DataSource"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataSource1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DataSource2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DataSource2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DataSource"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataSource2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DataSource3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DataSource3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DataSource"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataSource3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DataSource4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DataSource4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DataSource"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataSource4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DigitalAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DigitalAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigitalAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DigitalAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DigitalAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigitalAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DigitalAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DigitalAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigitalAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DigitalAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DigitalAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DigitalAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigitalAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DriversLicenseNumber1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DriversLicenseNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DriversLicenseNumber1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DriversLicenseNumber2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DriversLicenseNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DriversLicenseNumber2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DriversLicenseNumber3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DriversLicenseNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DriversLicenseNumber3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#DriversLicenseNumber4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#DriversLicenseNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DriversLicenseNumber4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Dropper1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Dropper1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dropper1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Dropper2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Dropper2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dropper2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Dropper3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Dropper3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dropper3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Dropper4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Dropper4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dropper4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Email1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Email1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
+        <hasAttachment rdf:resource="http://idea.rpi.edu/malont#File1"/>
+        <hasAttackerLocation rdf:resource="http://idea.rpi.edu/malont#Location1"/>
+        <hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailAddress1</hasEmailAddress>
+        <untitled-ontology-16:hasEmailSubject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailSubject1</untitled-ontology-16:hasEmailSubject>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Email2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Email2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
+        <hasAttachment rdf:resource="http://idea.rpi.edu/malont#File2"/>
+        <hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailAddress2</hasEmailAddress>
+        <untitled-ontology-16:hasEmailSubject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailSubject2</untitled-ontology-16:hasEmailSubject>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Email3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Email3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
+        <hasAttachment rdf:resource="http://idea.rpi.edu/malont#File3"/>
+        <hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailAddress3</hasEmailAddress>
+        <untitled-ontology-16:hasEmailSubject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailSubject3</untitled-ontology-16:hasEmailSubject>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Email4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Email4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
+        <hasAttachment rdf:resource="http://idea.rpi.edu/malont#File4"/>
+        <hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailAddress4</hasEmailAddress>
+        <untitled-ontology-16:hasEmailSubject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailSubject4</untitled-ontology-16:hasEmailSubject>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#EmailAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#EmailAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#EmailAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmailAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#EmailAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#EmailAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#EmailAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmailAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#EmailAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#EmailAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#EmailAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmailAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#EmailAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#EmailAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#EmailAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmailAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Event1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Event1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Event"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Event2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Event2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Event"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Event3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Event3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Event"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Event4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Event4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Event"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Exploit1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Exploit1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Exploit"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploit1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Exploit2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Exploit2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Exploit"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploit2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Exploit3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Exploit3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Exploit"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploit3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Exploit4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Exploit4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Exploit"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploit4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ExploitTargetObject1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject"/>
+        <hasType rdf:resource="http://idea.rpi.edu/malont#Person1"/>
+        <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExploitTargetObject1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ExploitTargetObject2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject"/>
+        <hasType rdf:resource="http://idea.rpi.edu/malont#Person2"/>
+        <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExploitTargetObject2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ExploitTargetObject3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject"/>
+        <hasType rdf:resource="http://idea.rpi.edu/malont#Person3"/>
+        <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExploitTargetObject3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ExploitTargetObject4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject"/>
+        <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExploitTargetObject4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#File1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#File1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <hasFileExtension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileExtension1</hasFileExtension>
+        <hasFileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileName1</hasFileName>
+        <hasFilePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filePath1</hasFilePath>
+        <hasFileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileSize1</hasFileSize>
+        <hasFileType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileType1</hasFileType>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#File2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#File2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <hasFileExtension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileExtension2</hasFileExtension>
+        <hasFileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileName2</hasFileName>
+        <hasFilePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filePath2</hasFilePath>
+        <hasFileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileSize2</hasFileSize>
+        <hasFileType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileType2</hasFileType>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#File3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#File3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <hasFileExtension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileExtension3</hasFileExtension>
+        <hasFileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileName3</hasFileName>
+        <hasFilePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filePath3</hasFilePath>
+        <hasFileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileSize3</hasFileSize>
+        <hasFileType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileType3</hasFileType>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#File4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#File4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#File"/>
+        <hasFileExtension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileExtension4</hasFileExtension>
+        <hasFileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileName4</hasFileName>
+        <hasFilePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filePath4</hasFilePath>
+        <hasFileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileSize4</hasFileSize>
+        <hasFileType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileType4</hasFileType>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#FinancialInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#FinancialInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#FinancialInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#FinancialInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialTransactionAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#FinancialTransactionAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialTransactionAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialTransactionAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#FinancialTransactionAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialTransactionAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialTransactionAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#FinancialTransactionAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialTransactionAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#FinancialTransactionAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#FinancialTransactionAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialTransactionAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#GeneralVirus1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#GeneralVirus1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralVirus1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#GeneralVirus2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#GeneralVirus2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralVirus2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#GeneralVirus3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#GeneralVirus3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralVirus3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#GeneralVirus4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#GeneralVirus4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralVirus4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Hash1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Hash1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Hash2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Hash2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Hash3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Hash3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Hash4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Hash4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Host1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Host1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Host"/>
+        <runsSoftware rdf:resource="http://idea.rpi.edu/malont#Software1"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Host2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Host2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Host"/>
+        <runsSoftware rdf:resource="http://idea.rpi.edu/malont#Software2"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Host3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Host3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Host"/>
+        <runsSoftware rdf:resource="http://idea.rpi.edu/malont#Software3"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Host4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Host4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Host"/>
+        <runsSoftware rdf:resource="http://idea.rpi.edu/malont#Software4"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Indicator1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Indicator1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <indicates rdf:resource="http://idea.rpi.edu/malont#Malware1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicator1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Indicator2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Indicator2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <indicates rdf:resource="http://idea.rpi.edu/malont#Malware2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicator2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Indicator3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Indicator3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <indicates rdf:resource="http://idea.rpi.edu/malont#Malware3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicator3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Indicator4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Indicator4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
+        <indicates rdf:resource="http://idea.rpi.edu/malont#Malware4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicator4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Information1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Information1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Information2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Information2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Information3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Information3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Information4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Information4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Information"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#InstallAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#InstallAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#InstallAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstallAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#InstallAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#InstallAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#InstallAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstallAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#InstallAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#InstallAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#InstallAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstallAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#InstallAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#InstallAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#InstallAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstallAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Locality1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Locality1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Locality"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Locality2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Locality2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Locality"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Locality3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Locality3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Locality"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Locality4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Locality4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Locality"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Location1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Location1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Location"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Location2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Location2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Location"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Location3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Location3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Location"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Location4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Location4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Location"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MD5_1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MD5_1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MD5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MD5_2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MD5_2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MD5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MD5_3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MD5_3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MD5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5_3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MD5_4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MD5_4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MD5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5_4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Malware1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Malware1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability1"/>
+        <hasAuthor rdf:resource="http://idea.rpi.edu/malont#Attacker1"/>
+        <hasCharacteristics rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics1"/>
+        <hasFamily rdf:resource="http://idea.rpi.edu/malont#MalwareFamily1"/>
+        <indicatedBy rdf:resource="http://idea.rpi.edu/malont#Indicator1"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address1"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper1"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host1"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Malware2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Malware2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability2"/>
+        <hasAuthor rdf:resource="http://idea.rpi.edu/malont#Attacker2"/>
+        <hasCharacteristics rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics2"/>
+        <hasFamily rdf:resource="http://idea.rpi.edu/malont#MalwareFamily2"/>
+        <indicatedBy rdf:resource="http://idea.rpi.edu/malont#Indicator2"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address1"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper2"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host2"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Malware3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Malware3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability3"/>
+        <hasAuthor rdf:resource="http://idea.rpi.edu/malont#Attacker3"/>
+        <hasCharacteristics rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics3"/>
+        <hasFamily rdf:resource="http://idea.rpi.edu/malont#MalwareFamily3"/>
+        <indicatedBy rdf:resource="http://idea.rpi.edu/malont#Indicator3"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address3"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper3"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host3"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Malware4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Malware4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
+        <hasAuthor rdf:resource="http://idea.rpi.edu/malont#Attacker4"/>
+        <hasCharacteristics rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics4"/>
+        <hasFamily rdf:resource="http://idea.rpi.edu/malont#MalwareFamily4"/>
+        <indicatedBy rdf:resource="http://idea.rpi.edu/malont#Indicator4"/>
+        <usesAddress rdf:resource="http://idea.rpi.edu/malont#Address4"/>
+        <usesDropper rdf:resource="http://idea.rpi.edu/malont#Dropper4"/>
+        <usesHost rdf:resource="http://idea.rpi.edu/malont#Host4"/>
+        <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareCharacteristics1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareCharacteristics1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareCharacteristics2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareCharacteristics2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareCharacteristics3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareCharacteristics3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareCharacteristics4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareCharacteristics4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareFamily1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareFamily1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
+        <hasMember rdf:resource="http://idea.rpi.edu/malont#Malware1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareFamily1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareFamily2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareFamily2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
+        <hasMember rdf:resource="http://idea.rpi.edu/malont#Malware2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareFamily2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareFamily3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareFamily3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
+        <hasMember rdf:resource="http://idea.rpi.edu/malont#Malware3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareFamily3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MalwareFamily4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareFamily4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
+        <hasMember rdf:resource="http://idea.rpi.edu/malont#Malware4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareFamily4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MedicalInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MedicalInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MedicalInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MedicalInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MedicalInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MedicalInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MedicalInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MedicalInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MedicalInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#MedicalInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MedicalInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MedicalInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ModificationAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ModificationAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ModificationAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ModificationAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ModificationAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ModificationAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ModificationAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ModificationAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ModificationAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#ModificationAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ModificationAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#ModificationAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#NetworkInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#NetworkInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#NetworkInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#NetworkInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#NetworkInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#NetworkInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#NetworkInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#NetworkInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#NetworkInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#NetworkInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#NetworkInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#NetworkInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Obfuscation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Obfuscation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Obfuscation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obfuscation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Obfuscation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Obfuscation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Obfuscation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obfuscation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Obfuscation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Obfuscation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Obfuscation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obfuscation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Obfuscation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Obfuscation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Obfuscation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obfuscation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Organization1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Organization1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
+        <hasProduct rdf:resource="http://idea.rpi.edu/malont#Software1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Organization2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Organization2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
+        <hasProduct rdf:resource="http://idea.rpi.edu/malont#Software2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Organization3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Organization3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
+        <hasProduct rdf:resource="http://idea.rpi.edu/malont#Software3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Organization4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Organization4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
+        <hasProduct rdf:resource="http://idea.rpi.edu/malont#Software4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Password1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Password1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Password"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Password1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Password2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Password2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Password"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Password2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Password3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Password3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Password"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Password3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Password4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Password4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Password"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Password4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Payload1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Payload1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Payload"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Payload1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Payload2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Payload2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Payload"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Payload2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Payload3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Payload3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Payload"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Payload3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Payload4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Payload4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Payload"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Payload4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Person1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Person1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Person2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Person2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Person3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Person3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
+        <hasType rdf:resource="http://idea.rpi.edu/malont#Person4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Person4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Person4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#PrintAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#PrintAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#PrintAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrintAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#PrintAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#PrintAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#PrintAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrintAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#PrintAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#PrintAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#PrintAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrintAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#PrintAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#PrintAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#PrintAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrintAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Region1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Region1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Region"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Region2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Region2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Region"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Region3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Region3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Region"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Region4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Region4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Region"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-1_1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-1_1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-1_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-1_2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-1_2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-1_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-1_3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-1_3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-1_3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-1_4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-1_4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-1_4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-256_1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-256_1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-256"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-256_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-256_2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-256_2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-256"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-256_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-256_3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-256_3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-256"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-256_3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SHA-256_4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-256_4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-256"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-256_4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SSDeep1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SSDeep1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSDeep1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SSDeep2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SSDeep2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSDeep2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SSDeep3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SSDeep3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSDeep3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SSDeep4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SSDeep4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSDeep4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SearchAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SearchAction1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SearchAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchAction1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SearchAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SearchAction2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SearchAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchAction2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SearchAction3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SearchAction3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SearchAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchAction3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SearchAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SearchAction4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SearchAction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchAction4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SocialSecurityNumber1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SocialSecurityNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialSecurityNumber1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SocialSecurityNumber2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SocialSecurityNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialSecurityNumber2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SocialSecurityNumber3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SocialSecurityNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialSecurityNumber3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SocialSecurityNumber4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SocialSecurityNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialSecurityNumber4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Software1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Software1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <hasProduct rdf:resource="http://idea.rpi.edu/malont#Software1"/>
+        <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability1"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">releaseYear1</hasReleaseYear>
+        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version1</hasVersion>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Software2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Software2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <hasProduct rdf:resource="http://idea.rpi.edu/malont#Software2"/>
+        <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability2"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">releaseYear2</hasReleaseYear>
+        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version2</hasVersion>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Software3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Software3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <hasProduct rdf:resource="http://idea.rpi.edu/malont#Software3"/>
+        <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability3"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">releaseYear3</hasReleaseYear>
+        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version3</hasVersion>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Software4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Software4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Software"/>
+        <hasProduct rdf:resource="http://idea.rpi.edu/malont#Software4"/>
+        <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">releaseYear4</hasReleaseYear>
+        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version4</hasVersion>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SourceCodeInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SourceCodeInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceCodeInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SourceCodeInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SourceCodeInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceCodeInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SourceCodeInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SourceCodeInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceCodeInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SourceCodeInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SourceCodeInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceCodeInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#System1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#System1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#System"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#System2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#System2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#System"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#System3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#System3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#System"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#System4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#System4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#System"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemConfigurationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemConfigurationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemConfigurationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemConfigurationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation5 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation5">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemConfigurationInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#SystemInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#SystemInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TechnologyInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TechnologyInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#TechnologyInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechnologyInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TechnologyInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TechnologyInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#TechnologyInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechnologyInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TechnologyInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TechnologyInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#TechnologyInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechnologyInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TechnologyInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TechnologyInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#TechnologyInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechnologyInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Time1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Time1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Time"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Time2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Time2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Time"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Time3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Time3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Time"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Time4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Time4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Time"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TrojanHorse1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TrojanHorse1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#TrojanHorse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TrojanHorse1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TrojanHorse2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TrojanHorse2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#TrojanHorse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TrojanHorse2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TrojanHorse3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TrojanHorse3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#TrojanHorse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TrojanHorse3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#TrojanHorse4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TrojanHorse4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#TrojanHorse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TrojanHorse4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniquelyIdentifiableInformation1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniquelyIdentifiableInformation2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniquelyIdentifiableInformation3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniquelyIdentifiableInformation4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#User1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#User1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#User"/>
+        <hasAccount rdf:resource="http://idea.rpi.edu/malont#Account1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#User2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#User2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#User"/>
+        <hasAccount rdf:resource="http://idea.rpi.edu/malont#Account2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#User3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#User3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#User"/>
+        <hasAccount rdf:resource="http://idea.rpi.edu/malont#Account3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#User4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#User4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#User"/>
+        <hasAccount rdf:resource="http://idea.rpi.edu/malont#Account4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UserName1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UserName1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#UserName"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserName1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UserName2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UserName2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#UserName"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserName2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UserName3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UserName3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#UserName"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserName3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#UserName4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UserName4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#UserName"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserName4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vector1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vector1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vector"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vector2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vector2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vector"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vector3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vector3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vector"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vector4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vector4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vector"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vulnerability1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vulnerability1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vulnerability2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vulnerability2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vulnerability3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vulnerability3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
+        <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#Vulnerability4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vulnerability4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#vHash1 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#vHash1">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#vHash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vHash1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#vHash2 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#vHash2">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#vHash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vHash2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#vHash3 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#vHash3">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#vHash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vHash3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://idea.rpi.edu/malont#vHash4 -->
+
+    <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#vHash4">
+        <rdf:type rdf:resource="http://idea.rpi.edu/malont#vHash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vHash4</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:label>
+            <rdf:Description/>
+        </rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-15#Campaign">
+        <rdfs:label>Campaign</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-15#Organization">
+        <rdfs:label>Organization</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-15#Person">
+        <rdfs:label>Person</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
