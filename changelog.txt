@@ -1,0 +1,27 @@
+1. Added a class titled "Miscellaneous"
+2. Made the following changes in data properties:
+
+  a. Email, hasEmailAddress, string	
+    -	Removed this data property as it stores redundant information
+  b. Email, hasEmailSubject, string	
+    -	Removed this data property as it is highly infrequent
+  c. Filename, hasFileExtension, string
+    - Created a class called “FileExtension” under the “Miscellaneous” class. Added object property <Indicator, hasFileExtension, FileExtension>
+  d. Filename, hasFileName, string
+    - Filename class is enough to hold this information, removed the data property
+  e. Filename, hasFilePath, string
+    - Filepath class is enough to hold this information, removed the data property
+  f. Filename, hasFileType, string
+    - Created a class called “FileType” under the “Miscellaneous” class. Added object property <Indicator, hasFileExtension, FileExtension>
+  g. Filename, hasFileSize, int	
+    - No need as it is less frequent, removed the data property
+  h. IPAddress, hasIP, string	
+    - IPAddress class is enough to hold this information, removed the data property
+  i. IPAddress, hasPort, int	
+    - Port class is enough to hold this information, removed the data property
+  j. Software, hasReleaseYear,string	
+    - Added <software, hasReleaseYear, Time> as an object property
+  k. IPAddress, hasURL, string	
+    - No need, URL class is enough to hold this information, removed the data property
+  l. Software, hasVersion, string	
+    - Added <software, hasReleaseVersion, Version> as an object property. Added a class called “version” under “Miscellaneous”.
